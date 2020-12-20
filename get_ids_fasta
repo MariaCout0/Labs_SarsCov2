@@ -1,0 +1,34 @@
+def get_ids(str1,str2):
+    '''Recebe duas strings p.ex: o nome do gene e o organismo
+    Retorna uma lista de IDS'''
+    from Bio import Entrez
+    res = []
+    for id1 in idlist: 
+    # heterogeneous nuclear ribonucleoprotein A1
+        handle = Entrez.efetch(db='protein', id = id1 , rettype="gb", retmode="text")
+        Entrez.email = 'lbiogrupo6@gmail.com'
+        record = handle.read()
+        if (str1 in record) and (str2 in record):
+            res.append(id1)
+    
+    return res
+
+def get_fasta(ids):
+    '''Recebe uma lista de ids para um dos genes
+    Cria ficheiros fasta correspondentes a cada um dos ids'''
+    for id0 in ids:
+        Entrez.email = 'lbiogrupo6@gmail.com'
+        handle = Entrez.efetch(db="protein", id=id0, rettype="fasta", retmode="text")
+
+        record = SeqIO.read(handle, "fasta")
+        nome = str(record.name +'.faa')
+
+        SeqIO.write(record, nome, 'fasta')
+            
+
+def teste():
+    str1 = input()
+    str2 = input()
+    ids = get_ids(str1,str2)
+    get_fasta(ids)
+teste()

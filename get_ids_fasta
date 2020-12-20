@@ -1,10 +1,26 @@
-def get_ids(str1,str2):
-    '''Recebe duas strings p.ex: o nome do gene e o organismo
-    Retorna uma lista de IDS'''
+def get_idlist(termo_de_pesquisa):
+
+    '''Recebe uma string que será o termo de pesquisa
+    Retorna o conjunto de ids dos records que resultam dessa pesquisa - lista de IDs'''
+    
+    from Bio import Entrez
+    Entrez.email = 'lbiogrupo6@gmail.com'
+    handle = Entrez.esearch(db='protein', term = termo_de_pesquisa, retmax = 100)
+    record = Entrez.read(handle)
+    handle.close()
+    idlist = record['IdList']
+    return idlist
+
+
+def get_ids(str1,str2, idlist):
+
+    '''Recebe duas strings i.e. o nome do gene e o organismo
+    Retorna uma lista de IDS que correspondem a registos cuja descrição contém os termos das strings do input'''
+    
     from Bio import Entrez
     res = []
+    
     for id1 in idlist: 
-    # heterogeneous nuclear ribonucleoprotein A1
         handle = Entrez.efetch(db='protein', id = id1 , rettype="gb", retmode="text")
         Entrez.email = 'lbiogrupo6@gmail.com'
         record = handle.read()
@@ -13,22 +29,124 @@ def get_ids(str1,str2):
     
     return res
 
+def get_seqio(res_ids):
+
+    '''Recebe a lista de ids após a pesquisa
+    Retorna uma lista de records SeqIO'''
+    
+    from Bio import Entrez
+    from Bio import SeqIO
+    
+    RES = []
+    for id0 in res_ids:
+        Entrez.email = 'lbiogrupo6@gmail.com'
+        handle = Entrez.efetch(db="protein", id=id0, rettype="gb", retmode="text")
+        record = SeqIO.read(handle, "genbank")
+        RES.append(record)
+    return RES
+    
+    
 def get_fasta(ids):
+
     '''Recebe uma lista de ids para um dos genes
     Cria ficheiros fasta correspondentes a cada um dos ids'''
+    
+    from Bio import Entrez
+    from Bio import SeqIO
+    
     for id0 in ids:
         Entrez.email = 'lbiogrupo6@gmail.com'
         handle = Entrez.efetch(db="protein", id=id0, rettype="fasta", retmode="text")
 
         record = SeqIO.read(handle, "fasta")
-        nome = str(record.name +'.faa')
+        nome = str(record.id +'.faa')
 
         SeqIO.write(record, nome, 'fasta')
             
+def get_annotations(record):
 
-def teste():
-    str1 = input()
-    str2 = input()
-    ids = get_ids(str1,str2)
+    '''Recebe um registo (record) do tipo SeqIO
+    Retorna um dicionario em que a chave é o ID do registo e o valor é a anotação'''
+    
+    a = {}                                              # dicionario com as annotations
+    for r in record:                                
+        a[r.id] = r.annotations
+    return a
+    
+
+    
+def get_features(record):
+
+    '''Recebe os records
+    Faz print do ID, features e qualifiers'''
+    
+    for feat in record:
+        print('\n')
+        print('\n')
+        print('-->ID:', feat.id)
+        n = feat.features
+        for i in range(len(record)):
+            print('*********************')
+            print('Features: ')
+            print(n[i])                
+            
+    
+
+def teste1():
+
+    termo_de_pesquisa = 'hnrnpa1'                       # Termo de pesquisa
+    idList = get_idlist(termo_de_pesquisa)              # Lista de IDS que correspondem ao termo de pesquisa
+    
+    str1 = 'heterogeneous nuclear ribonucleoprotein A1' # nome da proteína
+    str2 = 'Homo sapiens'                               # Organismo de interesse
+    ids = get_ids(str1,str2,idList)
+    
+    get_fasta(ids)                                      # obter os ficheiros FASTA
+    
+    record = get_seqio(ids)                             # Filtrar resultados da pesquisa a partir dos IDS obtidos
+    anota = get_annotations(record)                     # Obter as anotações para cada Record
+    print(anota)
+    
+teste1()
+
+def teste2():
+    termo_de_pesquisa = 'Nucleocapsid protein'
+    record = get_records(termo_de_pesquisa)
+    
+    str1 = 'Nucleoprotein'
+    str2 = 'SARS-CoV-2'
+    idlist = get_idlist(termo_de_pesquisa)
+    
+    ids = get_ids(str1,str2,idlist)
     get_fasta(ids)
-teste()
+    
+    record = get_seqio(ids) 
+    anota = get_annotations(record)
+    
+    print(anota)
+    
+    feature = get_features(record)
+    print(feature)
+    
+teste2()
+
+def teste3():
+    termo_de_pesquisa = 'SMAD3'
+    record = get_records(termo_de_pesquisa)
+    
+    str1 = 'mothers against decapentaplegic homolog 3'
+    str2 = 'Homo sapiens'
+    idlist = get_idlist(termo_de_pesquisa)
+    
+    ids = get_ids(str1,str2,idlist)
+    get_fasta(ids)
+    
+    record = get_seqio(ids) 
+    anota = get_annotations(record)
+    
+    print(anota)
+    
+    feature = get_features(record)
+    print(feature)
+    
+teste3()

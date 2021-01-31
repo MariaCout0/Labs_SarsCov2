@@ -1,0 +1,65 @@
+; pattern-assembly  -v 1 -subst 1 -toppat 50 -2str -max_asmb_nb 20 -i $RSAT/public_html/tmp/apache/2021/01/31/oligo-analysis_2021-01-31.214619_B8mcse.tab -o $RSAT/public_html/tmp/apache/2021/01/31/oligo-analysis_2021-01-31.214619_B8mcse.asmb
+; Input file	/vh/rsat/rsat/public_html/tmp/apache/2021/01/31/oligo-analysis_2021-01-31.214619_B8mcse.tab
+; Output file	/vh/rsat/rsat/public_html/tmp/apache/2021/01/31/oligo-analysis_2021-01-31.214619_B8mcse.asmb
+; Input score column           	8
+; Output score column          	0
+; Strand-insensitive assembly
+; Max flanking bases           	1
+; Max substitutions            	1
+; Min matches                  	0
+; Min weight                   	0
+; Max assembly size            	50
+; Max assembly width           	0
+; Top number of patterns       	50
+; Number of input patterns     	16
+;
+
+; assembly # 1	seed: acatcgga	6 assembled patterns	length 8
+; alignt	 rev_cpl	score
+acatcgga	tccgatgt	3.90
+acatcgg.	.ccgatgt	2.72
+acatcg..	..cgatgt	1.35
+.catcgga	tccgatg.	2.77
+.catcgg.	.ccgatg.	1.44
+..atcgga	tccgat..	1.73
+acatcgga	tccgatgt	3.90	best consensus
+
+; assembly # 2	seed: agcgct	6 assembled patterns	length 9
+;  alignt	  rev_cpl	score
+atagcgct.	.agcgctat	1.00
+atagcgc..	..gcgctat	0.40
+.tagcgctg	cagcgcta.	0.76
+.tagcgct.	.agcgcta.	0.43
+..agcgct.	.agcgct..	1.55
+...gcgctg	cagcgc...	0.27
+atagcgctg	cagcgctat	1.55	best consensus
+
+; assembly # 3	seed: attcgg	1 assembled patterns	length 6
+;alignt	rev_cpl	score
+attcgg	ccgaat	1.38
+attcgg	ccgaat	1.38	best consensus
+
+; assembly # 4	seed: ctgcga	1 assembled patterns	length 6
+;alignt	rev_cpl	score
+ctgcga	tcgcag	0.84
+ctgcga	tcgcag	0.84	best consensus
+
+; assembly # 5	seed: aaccagcg	8 assembled patterns	length 12
+;     alignt	     rev_cpl	score
+aaccagcg....	....cgctggtt	0.47
+.accagcgc...	...gcgctggt.	0.26
+...cagcgcta.	.tagcgctg...	0.76
+...cagcgc...	...gcgctg...	0.27
+....agcgct..	..agcgct....	1.55
+....agcgctat	atagcgct....	1.00
+....agcgcta.	.tagcgct....	0.43
+.....gcgctat	atagcgc.....	0.40
+aaccagcgctat	atagcgctggtt	1.55	best consensus
+; Host name	biow
+; Job started	2021-01-31.214626
+; Job done	2021-01-31.214628
+; Seconds	1.66
+;	user	1.66
+;	system	0
+;	cuser	0
+;	csystem	0

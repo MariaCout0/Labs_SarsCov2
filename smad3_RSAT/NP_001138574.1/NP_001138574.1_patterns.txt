@@ -1,0 +1,73 @@
+; pattern-assembly  -v 1 -subst 1 -toppat 50 -2str -max_asmb_nb 20 -i $RSAT/public_html/tmp/apache/2021/01/31/oligo-analysis_2021-01-31.205403_gi6mmX.tab -o $RSAT/public_html/tmp/apache/2021/01/31/oligo-analysis_2021-01-31.205403_gi6mmX.asmb
+; Input file	/vh/rsat/rsat/public_html/tmp/apache/2021/01/31/oligo-analysis_2021-01-31.205403_gi6mmX.tab
+; Output file	/vh/rsat/rsat/public_html/tmp/apache/2021/01/31/oligo-analysis_2021-01-31.205403_gi6mmX.asmb
+; Input score column           	8
+; Output score column          	0
+; Strand-insensitive assembly
+; Max flanking bases           	1
+; Max substitutions            	1
+; Min matches                  	0
+; Min weight                   	0
+; Max assembly size            	50
+; Max assembly width           	0
+; Top number of patterns       	50
+; Number of input patterns     	21
+;
+
+; assembly # 1	seed: acatcgga	6 assembled patterns	length 8
+; alignt	 rev_cpl	score
+acatcgga	tccgatgt	3.47
+acatcgg.	.ccgatgt	2.29
+acatcg..	..cgatgt	0.93
+.catcgga	tccgatg.	2.34
+.catcgg.	.ccgatg.	1.02
+..atcgga	tccgat..	1.30
+acatcgga	tccgatgt	3.47	best consensus
+
+; assembly # 2	seed: tccccga	5 assembled patterns	length 10
+;   alignt	   rev_cpl	score
+atccccga..	..tcggggat	0.29
+.tccccga..	..tcgggga.	1.14
+.tccccg...	...cgggga.	0.76
+...cccgaa.	.ttcggg...	0.47
+....ccgaat	attcgg....	0.96
+atccccgaat	attcggggat	1.14	best consensus
+
+; assembly # 3	seed: agcgct	5 assembled patterns	length 9
+;  alignt	  rev_cpl	score
+atagcgct.	.agcgctat	0.71
+atagcgc..	..gcgctat	0.11
+.tagcgctg	cagcgcta.	0.47
+.tagcgct.	.agcgcta.	0.14
+..agcgct.	.agcgct..	1.12
+atagcgctg	cagcgctat	1.12	best consensus
+
+; assembly # 4	seed: gagttcgc	2 assembled patterns	length 8
+; alignt	 rev_cpl	score
+gagttcgc	gcgaactc	0.56
+.agttcgc	gcgaact.	0.20
+gagttcgc	gcgaactc	0.56	best consensus
+
+; assembly # 5	seed: ctgcga	1 assembled patterns	length 6
+;alignt	rev_cpl	score
+ctgcga	tcgcag	0.42
+ctgcga	tcgcag	0.42	best consensus
+
+; assembly # 6	seed: aaccag	1 assembled patterns	length 6
+;alignt	rev_cpl	score
+aaccag	ctggtt	0.41
+aaccag	ctggtt	0.41	best consensus
+
+; assembly # 7	seed: aaccagcg	2 assembled patterns	length 8
+; alignt	 rev_cpl	score
+aaccag..	..ctggtt	0.41
+aaccagcg	cgctggtt	0.18
+aaccagcg	cgctggtt	0.41	best consensus
+; Host name	biow
+; Job started	2021-01-31.205410
+; Job done	2021-01-31.205413
+; Seconds	2.35
+;	user	2.35
+;	system	0
+;	cuser	0
+;	csystem	0

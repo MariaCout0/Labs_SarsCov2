@@ -1,0 +1,171 @@
+AC  assembly_1
+XX
+ID  acatcgga
+XX
+DE  nnACATCGGAnn
+P0           a         c         g         t
+1         0.00      0.00      0.00      0.00
+2         0.00      0.00      0.00      0.00
+3         3.90      0.00      0.00      0.00
+4         0.00      3.90      0.00      0.00
+5         3.90      0.00      0.00      0.00
+6         0.00      0.00      0.00      3.90
+7         0.00      3.90      0.00      0.00
+8         0.00      0.00      3.90      0.00
+9         0.00      0.00      3.90      0.00
+10        3.90      0.00      0.00      0.00
+11        0.00      0.00      0.00      0.00
+12        0.00      0.00      0.00      0.00
+XX
+CC  program: pattern-assembly
+CC  matrix.nb: 1
+CC  id: assembly_1
+CC  name: acatcgga
+CC  asmb.seed: acatcgga
+CC  matrix.nb: 1
+CC  sites: 6
+CC  consensus.strict: --ACATCGGA--
+CC  consensus.strict.rc: --TCCGATGT--
+CC  consensus.IUPAC: nnACATCGGAnn
+CC  consensus.IUPAC.rc: NNTCCGATGTNN
+CC  consensus.regexp: [acgt][acgt]ACATCGGA[acgt][acgt]
+CC  consensus.regexp.rc: [ACGT][ACGT]TCCGATGT[ACGT][ACGT]
+XX
+//
+AC  assembly_2
+XX
+ID  atagcgctg
+XX
+DE  nnatAGCGCTgnn
+P0           a         c         g         t
+1         0.00      0.00      0.00      0.00
+2         0.00      0.00      0.00      0.00
+3         1.00      0.00      0.00      0.00
+4         0.00      0.00      0.00      1.00
+5         1.55      0.00      0.00      0.00
+6         0.00      0.00      1.55      0.00
+7         0.00      1.55      0.00      0.00
+8         0.00      0.00      1.55      0.00
+9         0.00      1.55      0.00      0.00
+10        0.00      0.00      0.00      1.55
+11        0.00      0.00      0.76      0.00
+12        0.00      0.00      0.00      0.00
+13        0.00      0.00      0.00      0.00
+XX
+CC  program: pattern-assembly
+CC  matrix.nb: 2
+CC  id: assembly_2
+CC  name: atagcgctg
+CC  asmb.seed: agcgct
+CC  matrix.nb: 2
+CC  sites: 6
+CC  consensus.strict: --atAGCGCTg--
+CC  consensus.strict.rc: --CAGCGCTAT--
+CC  consensus.IUPAC: nnatAGCGCTgnn
+CC  consensus.IUPAC.rc: NNCAGCGCTATNN
+CC  consensus.regexp: [acgt][acgt]atAGCGCTg[acgt][acgt]
+CC  consensus.regexp.rc: [ACGT][ACGT]CAGCGCTAT[ACGT][ACGT]
+XX
+//
+AC  assembly_3
+XX
+ID  attcgg
+XX
+DE  nnATTCGGnn
+P0           a         c         g         t
+1         0.00      0.00      0.00      0.00
+2         0.00      0.00      0.00      0.00
+3         1.38      0.00      0.00      0.00
+4         0.00      0.00      0.00      1.38
+5         0.00      0.00      0.00      1.38
+6         0.00      1.38      0.00      0.00
+7         0.00      0.00      1.38      0.00
+8         0.00      0.00      1.38      0.00
+9         0.00      0.00      0.00      0.00
+10        0.00      0.00      0.00      0.00
+XX
+CC  program: pattern-assembly
+CC  matrix.nb: 3
+CC  id: assembly_3
+CC  name: attcgg
+CC  asmb.seed: attcgg
+CC  matrix.nb: 3
+CC  sites: 1
+CC  consensus.strict: --ATTCGG--
+CC  consensus.strict.rc: --CCGAAT--
+CC  consensus.IUPAC: nnATTCGGnn
+CC  consensus.IUPAC.rc: NNCCGAATNN
+CC  consensus.regexp: [acgt][acgt]ATTCGG[acgt][acgt]
+CC  consensus.regexp.rc: [ACGT][ACGT]CCGAAT[ACGT][ACGT]
+XX
+//
+AC  assembly_4
+XX
+ID  ctgcga
+XX
+DE  nnctgcgann
+P0           a         c         g         t
+1         0.00      0.00      0.00      0.00
+2         0.00      0.00      0.00      0.00
+3         0.00      0.84      0.00      0.00
+4         0.00      0.00      0.00      0.84
+5         0.00      0.00      0.84      0.00
+6         0.00      0.84      0.00      0.00
+7         0.00      0.00      0.84      0.00
+8         0.84      0.00      0.00      0.00
+9         0.00      0.00      0.00      0.00
+10        0.00      0.00      0.00      0.00
+XX
+CC  program: pattern-assembly
+CC  matrix.nb: 4
+CC  id: assembly_4
+CC  name: ctgcga
+CC  asmb.seed: ctgcga
+CC  matrix.nb: 4
+CC  sites: 1
+CC  consensus.strict: --ctgcga--
+CC  consensus.strict.rc: --TCGCAG--
+CC  consensus.IUPAC: nnctgcgann
+CC  consensus.IUPAC.rc: NNTCGCAGNN
+CC  consensus.regexp: [acgt][acgt]ctgcga[acgt][acgt]
+CC  consensus.regexp.rc: [ACGT][ACGT]TCGCAG[ACGT][ACGT]
+XX
+//
+AC  assembly_5
+XX
+ID  aaccagcgctat
+XX
+DE  nnaaccAGCGCTatnn
+P0           a         c         g         t
+1         0.00      0.00      0.00      0.00
+2         0.00      0.00      0.00      0.00
+3         0.47      0.00      0.00      0.00
+4         0.47      0.00      0.00      0.00
+5         0.00      0.47      0.00      0.00
+6         0.00      0.76      0.00      0.00
+7         1.55      0.00      0.00      0.00
+8         0.00      0.00      1.55      0.00
+9         0.00      1.55      0.00      0.00
+10        0.00      0.00      1.55      0.00
+11        0.00      1.55      0.00      0.00
+12        0.00      0.00      0.00      1.55
+13        1.00      0.00      0.00      0.00
+14        0.00      0.00      0.00      1.00
+15        0.00      0.00      0.00      0.00
+16        0.00      0.00      0.00      0.00
+XX
+CC  program: pattern-assembly
+CC  matrix.nb: 5
+CC  id: assembly_5
+CC  name: aaccagcgctat
+CC  asmb.seed: aaccagcg
+CC  matrix.nb: 5
+CC  sites: 8
+CC  consensus.strict: --aaccAGCGCTat--
+CC  consensus.strict.rc: --ATAGCGCTGGTT--
+CC  consensus.IUPAC: nnaaccAGCGCTatnn
+CC  consensus.IUPAC.rc: NNATAGCGCTGGTTNN
+CC  consensus.regexp: [acgt][acgt]aaccAGCGCTat[acgt][acgt]
+CC  consensus.regexp.rc: [ACGT][ACGT]ATAGCGCTGGTT[ACGT][ACGT]
+XX
+//

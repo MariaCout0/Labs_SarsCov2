@@ -1,0 +1,201 @@
+; oligo-analysis  -v 1 -sort -i $RSAT/public_html/tmp/apache/2021/01/31/tmp_sequence_2021-01-31.200817_jZuenJ.fasta.purged -format fasta -lth occ_sig 0 -uth rank 50 -return occ,proba,rank -2str -noov -quick_if_possible -seqtype dna -bg upstream-noorf -org Homo_sapiens_GRCh38 -pseudo 0.01 -l 6 -o $RSAT/public_html/tmp/apache/2021/01/31/oligo-analysis_2021-01-31.200817_BJxUly_6nt.tab
+; Citation: van Helden et al. (1998). J Mol Biol 281(5), 827-42. 
+; Program version              	1.169
+; Quick counting mode          
+; Detection of over-represented words (right-tail test)
+; Oligomer length              	6
+; Input file                   	$RSAT/public_html/tmp/apache/2021/01/31/tmp_sequence_2021-01-31.200817_jZuenJ.fasta.purged
+; Input format                 	fasta
+; Output file                  	$RSAT/public_html/tmp/apache/2021/01/31/oligo-analysis_2021-01-31.200817_BJxUly_6nt.tab
+; Discard overlapping matches
+; Counted on both strands
+; 	grouped by pairs of reverse complements
+; Background model             	upstream-noorf
+; Organism                     	Homo_sapiens_GRCh38
+; Background estimation method 	Frequency file
+; Expected frequency file      	$RSAT/public_html/data/genomes/Homo_sapiens_GRCh38/oligo-frequencies/6nt_upstream-noorf_Homo_sapiens_GRCh38-noov-2str.freq
+; Pseudo-frequency             	0.01
+; Pseudo-frequency per oligo   	4.80769230769231e-06
+; Sequence type                	DNA
+; Nb of sequences              	1
+; Sum of sequence lengths      	1119
+; discarded residues           	NA (quick mode)	 (other letters than ACGT)
+; discarded occurrences        	NA (quick mode)	 (contain discarded residues)
+; nb possible positions        	NA (quick mode)
+; total oligo occurrences      	1114
+; total overlapping occurrences	9
+; total non overlapping occ    	1105
+; alphabet size                	4
+; nb possible oligomers        	2080
+; oligomers tested for significance	2080
+; Sequences:
+;	lcl|NM_031157.4_cds_NP_112420.1_1	1119
+;
+; column headers
+;	1	seq            	oligomer sequence
+;	2	id             	oligomer identifier
+;	3	exp_freq       	expected relative frequency
+;	4	occ            	observed occurrences
+;	5	exp_occ        	expected occurrences
+;	6	occ_P          	occurrence probability (binomial)
+;	7	occ_E          	E-value for occurrences (binomial)
+;	8	occ_sig        	occurrence significance (binomial)
+;	9	rank           	rank
+;	10	ovl_occ        	number of overlapping occurrences (discarded from the count)
+;	11	forbocc        	forbidden positions (to avoid self-overlap)
+#seq	id	exp_freq	occ	exp_occ	occ_P	occ_E	occ_sig	rank	ovl_occ	forbocc
+ccacca	ccacca|tggtgg	0.0010557692961	10	1.18	4.7e-07	9.7e-04	3.01	1	2	50
+acgacc	acgacc|ggtcgt	0.0000597247876	4	0.07	7.7e-07	1.6e-03	2.80	2	0	20
+cctcca	cctcca|tggagg	0.0008945236631	9	1.00	1.1e-06	2.2e-03	2.65	3	0	45
+catagc	catagc|gctatg	0.0003255065403	6	0.36	2.3e-06	4.8e-03	2.32	4	0	30
+ccacga	ccacga|tcgtgg	0.0001189897561	4	0.13	1.2e-05	2.4e-02	1.62	5	0	20
+gtggca	gtggca|tgccac	0.0007238552385	7	0.81	2.1e-05	4.5e-02	1.35	6	0	35
+ccatag	ccatag|ctatgg	0.0003029969379	5	0.34	2.7e-05	5.7e-02	1.24	7	0	25
+accacc	accacc|ggtggt	0.0005537554925	6	0.62	4.5e-05	9.3e-02	1.03	8	2	30
+caaagc	caaagc|gctttg	0.0005793316414	6	0.65	5.7e-05	1.2e-01	0.92	9	0	30
+cgacca	cgacca|tggtcg	0.0000691619762	3	0.08	7.2e-05	1.5e-01	0.83	10	0	15
+cacgac	cacgac|gtcgtg	0.0000763676404	3	0.09	9.6e-05	2.0e-01	0.70	11	0	15
+ccgcca	ccgcca|tggcgg	0.0002293278393	4	0.26	0.00014	3.0e-01	0.52	12	0	20
+ggtgga	ggtgga|tccacc	0.0007317231615	6	0.82	0.00020	4.2e-01	0.38	13	0	30
+atagcc	atagcc|ggctat	0.0002734544345	4	0.30	0.00028	5.8e-01	0.23	14	0	20
+gccata	gccata|tatggc	0.0002952585872	4	0.33	0.00037	7.8e-01	0.11	15	0	20
+accgcc	accgcc|ggcggt	0.0001256267416	3	0.14	0.00041	8.5e-01	0.07	16	0	15
+; Host name	biow
+; Job started	2021-01-31.200818
+; Job done	2021-01-31.200818
+; Seconds	0.41
+;	user	0.41
+;	system	0.01
+;	cuser	0.13
+;	csystem	0.01
+; oligo-analysis  -v 1 -sort -i $RSAT/public_html/tmp/apache/2021/01/31/tmp_sequence_2021-01-31.200817_jZuenJ.fasta.purged -format fasta -lth occ_sig 0 -uth rank 50 -return occ,proba,rank -2str -noov -quick_if_possible -seqtype dna -bg upstream-noorf -org Homo_sapiens_GRCh38 -pseudo 0.01 -l 7 -o $RSAT/public_html/tmp/apache/2021/01/31/oligo-analysis_2021-01-31.200817_BJxUly_7nt.tab
+; Citation: van Helden et al. (1998). J Mol Biol 281(5), 827-42. 
+; Program version              	1.169
+; Quick counting mode          
+; Detection of over-represented words (right-tail test)
+; Oligomer length              	7
+; Input file                   	$RSAT/public_html/tmp/apache/2021/01/31/tmp_sequence_2021-01-31.200817_jZuenJ.fasta.purged
+; Input format                 	fasta
+; Output file                  	$RSAT/public_html/tmp/apache/2021/01/31/oligo-analysis_2021-01-31.200817_BJxUly_7nt.tab
+; Discard overlapping matches
+; Counted on both strands
+; 	grouped by pairs of reverse complements
+; Background model             	upstream-noorf
+; Organism                     	Homo_sapiens_GRCh38
+; Background estimation method 	Frequency file
+; Expected frequency file      	$RSAT/public_html/data/genomes/Homo_sapiens_GRCh38/oligo-frequencies/7nt_upstream-noorf_Homo_sapiens_GRCh38-noov-2str.freq
+; Pseudo-frequency             	0.01
+; Pseudo-frequency per oligo   	1.220703125e-06
+; Sequence type                	DNA
+; Nb of sequences              	1
+; Sum of sequence lengths      	1119
+; discarded residues           	NA (quick mode)	 (other letters than ACGT)
+; discarded occurrences        	NA (quick mode)	 (contain discarded residues)
+; nb possible positions        	NA (quick mode)
+; total oligo occurrences      	1113
+; total overlapping occurrences	12
+; total non overlapping occ    	1101
+; alphabet size                	4
+; nb possible oligomers        	8192
+; oligomers tested for significance	8192
+; Sequences:
+;	lcl|NM_031157.4_cds_NP_112420.1_1	1119
+;
+; column headers
+;	1	seq            	oligomer sequence
+;	2	id             	oligomer identifier
+;	3	exp_freq       	expected relative frequency
+;	4	occ            	observed occurrences
+;	5	exp_occ        	expected occurrences
+;	6	occ_P          	occurrence probability (binomial)
+;	7	occ_E          	E-value for occurrences (binomial)
+;	8	occ_sig        	occurrence significance (binomial)
+;	9	rank           	rank
+;	10	ovl_occ        	number of overlapping occurrences (discarded from the count)
+;	11	forbocc        	forbidden positions (to avoid self-overlap)
+#seq	id	exp_freq	occ	exp_occ	occ_P	occ_E	occ_sig	rank	ovl_occ	forbocc
+cgccata	cgccata|tatggcg	0.0000129503606	3	0.01	4.9e-07	4.0e-03	2.39	1	0	18
+ctatggc	ctatggc|gccatag	0.0000646746921	4	0.07	1.1e-06	8.6e-03	2.07	2	0	24
+acgacca	acgacca|tggtcgt	0.0000174174292	3	0.02	1.2e-06	9.8e-03	2.01	3	0	18
+ccatagc	ccatagc|gctatgg	0.0000710726871	4	0.08	1.5e-06	1.2e-02	1.90	4	0	24
+cacgacc	cacgacc|ggtcgtg	0.0000230733145	3	0.03	2.8e-06	2.3e-02	1.65	5	0	18
+ccacgac	ccacgac|gtcgtgg	0.0000270072169	3	0.03	4.4e-06	3.6e-02	1.44	6	0	18
+accgcca	accgcca|tggcggt	0.0000299684510	3	0.03	6e-06	4.9e-02	1.31	7	0	18
+atggcgg	atggcgg|ccgccat	0.0000396663128	3	0.04	1.4e-05	1.1e-01	0.95	8	0	18
+caaagcc	caaagcc|ggctttg	0.0001645785199	4	0.18	4e-05	3.3e-01	0.48	9	0	24
+cactgcc	cactgcc|ggcagtg	0.0001823747447	4	0.20	6e-05	4.9e-01	0.31	10	0	24
+catagcc	catagcc|ggctatg	0.0000703449872	3	0.08	7.5e-05	6.2e-01	0.21	11	0	18
+; Host name	biow
+; Job started	2021-01-31.200818
+; Job done	2021-01-31.200820
+; Seconds	1.23
+;	user	1.23
+;	system	0.01
+;	cuser	0.13
+;	csystem	0.01
+; oligo-analysis  -v 1 -sort -i $RSAT/public_html/tmp/apache/2021/01/31/tmp_sequence_2021-01-31.200817_jZuenJ.fasta.purged -format fasta -lth occ_sig 0 -uth rank 50 -return occ,proba,rank -2str -noov -quick_if_possible -seqtype dna -bg upstream-noorf -org Homo_sapiens_GRCh38 -pseudo 0.01 -l 8 -o $RSAT/public_html/tmp/apache/2021/01/31/oligo-analysis_2021-01-31.200817_BJxUly_8nt.tab
+; Citation: van Helden et al. (1998). J Mol Biol 281(5), 827-42. 
+; Program version              	1.169
+; Quick counting mode          
+; Detection of over-represented words (right-tail test)
+; Oligomer length              	8
+; Input file                   	$RSAT/public_html/tmp/apache/2021/01/31/tmp_sequence_2021-01-31.200817_jZuenJ.fasta.purged
+; Input format                 	fasta
+; Output file                  	$RSAT/public_html/tmp/apache/2021/01/31/oligo-analysis_2021-01-31.200817_BJxUly_8nt.tab
+; Discard overlapping matches
+; Counted on both strands
+; 	grouped by pairs of reverse complements
+; Background model             	upstream-noorf
+; Organism                     	Homo_sapiens_GRCh38
+; Background estimation method 	Frequency file
+; Expected frequency file      	$RSAT/public_html/data/genomes/Homo_sapiens_GRCh38/oligo-frequencies/8nt_upstream-noorf_Homo_sapiens_GRCh38-noov-2str.freq
+; Pseudo-frequency             	0.01
+; Pseudo-frequency per oligo   	3.03988326848249e-07
+; Sequence type                	DNA
+; Nb of sequences              	1
+; Sum of sequence lengths      	1119
+; discarded residues           	NA (quick mode)	 (other letters than ACGT)
+; discarded occurrences        	NA (quick mode)	 (contain discarded residues)
+; nb possible positions        	NA (quick mode)
+; total oligo occurrences      	1112
+; total overlapping occurrences	7
+; total non overlapping occ    	1105
+; alphabet size                	4
+; nb possible oligomers        	32896
+; oligomers tested for significance	32896
+; Sequences:
+;	lcl|NM_031157.4_cds_NP_112420.1_1	1119
+;
+; column headers
+;	1	seq            	oligomer sequence
+;	2	id             	oligomer identifier
+;	3	exp_freq       	expected relative frequency
+;	4	occ            	observed occurrences
+;	5	exp_occ        	expected occurrences
+;	6	occ_P          	occurrence probability (binomial)
+;	7	occ_E          	E-value for occurrences (binomial)
+;	8	occ_sig        	occurrence significance (binomial)
+;	9	rank           	rank
+;	10	ovl_occ        	number of overlapping occurrences (discarded from the count)
+;	11	forbocc        	forbidden positions (to avoid self-overlap)
+#seq	id	exp_freq	occ	exp_occ	occ_P	occ_E	occ_sig	rank	ovl_occ	forbocc
+cgccatag	cgccatag|ctatggcg	0.0000030782055	3	0.0034	6.6e-09	2.2e-04	3.66	1	0	21
+ccgccata	ccgccata|tatggcgg	0.0000038348102	3	0.0043	1.3e-08	4.2e-04	3.37	2	0	21
+ccacgacc	ccacgacc|ggtcgtgg	0.0000087635493	3	0.0097	1.5e-07	5.0e-03	2.30	3	0	21
+gccatagc	gccatagc|gctatggc	0.0000143840412	3	0.02	6.7e-07	2.2e-02	1.66	4	0	21
+ccactgcc	ccactgcc|ggcagtgg	0.0000644424483	4	0.07	1e-06	3.4e-02	1.47	5	0	28
+ccatagcc	ccatagcc|ggctatgg	0.0000193848379	3	0.02	1.6e-06	5.4e-02	1.27	6	0	21
+gtcgtgga	gtcgtgga|tccacgac	0.0000044977400	2	0.005	1.2e-05	4.1e-01	0.39	7	0	14
+acgaccac	acgaccac|gtggtcgt	0.0000050165546	2	0.0056	1.5e-05	5.1e-01	0.29	8	0	14
+gtggtgga	gtggtgga|tccaccac	0.0000421334187	3	0.05	1.7e-05	5.4e-01	0.27	9	0	21
+ccaaagcc	ccaaagcc|ggctttgg	0.0000476458243	3	0.05	2.4e-05	7.8e-01	0.11	10	0	21
+actgtgaa	actgtgaa|ttcacagt	0.0000494256468	3	0.05	2.6e-05	8.7e-01	0.06	11	0	21
+cacgacca	cacgacca|tggtcgtg	0.0000066378504	2	0.0074	2.7e-05	8.9e-01	0.05	12	0	14
+; Host name	biow
+; Job started	2021-01-31.200820
+; Job done	2021-01-31.200825
+; Seconds	4.76
+;	user	4.76
+;	system	0.04
+;	cuser	0.16
+;	csystem	0.01

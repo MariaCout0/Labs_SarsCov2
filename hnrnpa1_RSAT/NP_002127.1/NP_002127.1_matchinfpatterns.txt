@@ -1,0 +1,122 @@
+; dna-pattern  -v 1 -pl $RSAT/public_html/tmp/apache/2021/01/31/dna-pattern_2021-01-31.203259_RZsh2E.pat -i $RSAT/public_html/tmp/apache/2021/01/31/tmp_sequence_2021-01-31.201610_XzhnNi.fasta.fasta -format fasta -return sites -origin -0 -N 4 -return limits -noov -2str -subst 0
+; Citation: van Helden et al. (2000). Yeast 16(2), 177-187.
+; Input file           	$RSAT/public_html/tmp/apache/2021/01/31/tmp_sequence_2021-01-31.201610_XzhnNi.fasta.fasta
+; Input format         	fasta
+; Pattern file         	$RSAT/public_html/tmp/apache/2021/01/31/dna-pattern_2021-01-31.203259_RZsh2E.pat
+; Search method        	regexp
+; Threshold            	0
+; Allowed substitutions	0
+; Return fields
+;                     	limits
+;                     	sites
+; Patterns
+; 	seq	id	score
+; 	acgacc	acgacc|ggtcgt	3.05
+; 	ccacgacc	ccacgacc|ggtcgtgg	2.50
+; 	acgacca	acgacca|tggtcgt	2.21
+; 	ccacga	ccacga|tcgtgg	1.88
+; 	cacgacc	cacgacc|ggtcgtg	1.84
+; 	ccacca	ccacca|tggtgg	1.65
+; 	ccacgac	ccacgac|gtcgtgg	1.64
+; 	cctcca	cctcca|tggagg	1.18
+; 	cgacca	cgacca|tggtcg	1.02
+; 	cacgac	cacgac|gtcgtg	0.89
+; 	cgccatag	cgccatag|ctatggcg	0.85
+; 	gtggca	gtggca|tgccac	0.75
+; 	ccgccata	ccgccata|tatggcgg	0.66
+; 	gtcgtgga	gtcgtgga|tccacgac	0.52
+; 	ctatggc	ctatggc|gccatag	0.51
+; 	acgaccac	acgaccac|gtggtcgt	0.42
+; 	actgtgaa	actgtgaa|ttcacagt	0.25
+; 	caaagc	caaagc|gctttg	0.24
+; 	cgccata	cgccata|tatggcg	0.21
+; 	cacgacca	cacgacca|tggtcgtg	0.18
+; 	cgtgga	cgtgga|tccacg	0.08
+; 	accgccat	accgccat|atggcggt	0.08
+; 
+; Matching positions
+; PatID	Strand	Pattern	SeqID	Start	End	matching_seq	Score
+START_END	DR	-	lcl|NM_002136.4_cds_NP_002127.1_1	-963	-1	-	0.00
+acgacc|ggtcgt	D	acgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-503	-498	tttgACGACCatga	3.05
+acgacc|ggtcgt	R	acgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-351	-346	ctccACGACCacca	3.05
+acgacc|ggtcgt	R	acgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-315	-310	ctccACGACCgaag	3.05
+acgacc|ggtcgt	R	acgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-294	-289	caccACGACCactg	3.05
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-351	-344	acctCCACGACCacca	2.50
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-315	-308	tcctCCACGACCgaag	2.50
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-294	-287	gccaCCACGACCactg	2.50
+acgacca|tggtcgt	D	acgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-503	-497	tttgACGACCAtgac	2.21
+acgacca|tggtcgt	R	acgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-352	-346	ctccACGACCAccac	2.21
+acgacca|tggtcgt	R	acgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-295	-289	caccACGACCActga	2.21
+ccacga|tcgtgg	D	ccacga	lcl|NM_002136.4_cds_NP_002127.1_1	-69	-64	aaaaCCACGAaacc	1.88
+ccacga|tcgtgg	R	ccacga	lcl|NM_002136.4_cds_NP_002127.1_1	-349	-344	acctCCACGAccac	1.88
+ccacga|tcgtgg	R	ccacga	lcl|NM_002136.4_cds_NP_002127.1_1	-313	-308	tcctCCACGAccga	1.88
+ccacga|tcgtgg	R	ccacga	lcl|NM_002136.4_cds_NP_002127.1_1	-292	-287	gccaCCACGAccac	1.88
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-351	-345	cctcCACGACCacca	1.84
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-315	-309	cctcCACGACCgaag	1.84
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-294	-288	ccacCACGACCactg	1.84
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-637	-632	aatgCCACCAacaa	1.65
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-358	-353	accaCCACCAaagt	1.65
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-289	-284	aaagCCACCAcgac	1.65
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-280	-275	gctgCCACCAaagc	1.65
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-268	-263	accaCCACCAcggc	1.65
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-262	-257	atatCCACCAccac	1.65
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-253	-248	actgCCACCAtatc	1.65
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-196	-191	gcttCCACCAcctc	1.65
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_002136.4_cds_NP_002127.1_1	-350	-344	acctCCACGACcacc	1.64
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_002136.4_cds_NP_002127.1_1	-314	-308	tcctCCACGACcgaa	1.64
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_002136.4_cds_NP_002127.1_1	-293	-287	gccaCCACGACcact	1.64
+cctcca|tggagg	R	cctcca	lcl|NM_002136.4_cds_NP_002127.1_1	-910	-905	caacCCTCCAatga	1.18
+cctcca|tggagg	R	cctcca	lcl|NM_002136.4_cds_NP_002127.1_1	-770	-765	acctCCTCCAcagt	1.18
+cctcca|tggagg	R	cctcca	lcl|NM_002136.4_cds_NP_002127.1_1	-346	-341	accaCCTCCAcgac	1.18
+cctcca|tggagg	R	cctcca	lcl|NM_002136.4_cds_NP_002127.1_1	-310	-305	gtttCCTCCAcgac	1.18
+cctcca|tggagg	R	cctcca	lcl|NM_002136.4_cds_NP_002127.1_1	-202	-197	accaCCTCCAaaat	1.18
+cctcca|tggagg	R	cctcca	lcl|NM_002136.4_cds_NP_002127.1_1	-121	-116	tctgCCTCCAaaat	1.18
+cctcca|tggagg	R	cctcca	lcl|NM_002136.4_cds_NP_002127.1_1	-91	-86	ttggCCTCCAccgc	1.18
+cgacca|tggtcg	D	cgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-502	-497	ttgaCGACCAtgac	1.02
+cgacca|tggtcg	R	cgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-352	-347	tccaCGACCAccac	1.02
+cgacca|tggtcg	R	cgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-295	-290	accaCGACCActga	1.02
+cacgac|gtcgtg	R	cacgac	lcl|NM_002136.4_cds_NP_002127.1_1	-350	-345	cctcCACGACcacc	0.89
+cacgac|gtcgtg	R	cacgac	lcl|NM_002136.4_cds_NP_002127.1_1	-314	-309	cctcCACGACcgaa	0.89
+cacgac|gtcgtg	R	cacgac	lcl|NM_002136.4_cds_NP_002127.1_1	-293	-288	ccacCACGACcact	0.89
+cgccatag|ctatggcg	R	cgccatag	lcl|NM_002136.4_cds_NP_002127.1_1	-100	-93	ccacCGCCATAGgggc	0.85
+cgccatag|ctatggcg	R	cgccatag	lcl|NM_002136.4_cds_NP_002127.1_1	-52	-45	gaacCGCCATAGccac	0.85
+gtggca|tgccac	D	gtggca	lcl|NM_002136.4_cds_NP_002127.1_1	-635	-630	gttgGTGGCAttaa	0.75
+gtggca|tgccac	D	gtggca	lcl|NM_002136.4_cds_NP_002127.1_1	-539	-534	ggcaGTGGCAagaa	0.75
+gtggca|tgccac	D	gtggca	lcl|NM_002136.4_cds_NP_002127.1_1	-278	-273	tttgGTGGCAgccg	0.75
+gtggca|tgccac	D	gtggca	lcl|NM_002136.4_cds_NP_002127.1_1	-251	-246	tatgGTGGCAgtgg	0.75
+gtggca|tgccac	D	gtggca	lcl|NM_002136.4_cds_NP_002127.1_1	-17	-12	ggcaGTGGCAgaag	0.75
+gtggca|tgccac	R	gtggca	lcl|NM_002136.4_cds_NP_002127.1_1	-778	-773	cacaGTGGCAtatg	0.75
+ccgccata|tatggcgg	R	ccgccata	lcl|NM_002136.4_cds_NP_002127.1_1	-99	-92	tccaCCGCCATAgggg	0.66
+ccgccata|tatggcgg	R	ccgccata	lcl|NM_002136.4_cds_NP_002127.1_1	-51	-44	ggaaCCGCCATAgcca	0.66
+gtcgtgga|tccacgac	D	gtcgtgga	lcl|NM_002136.4_cds_NP_002127.1_1	-350	-343	ggtgGTCGTGGAggtg	0.52
+gtcgtgga|tccacgac	D	gtcgtgga	lcl|NM_002136.4_cds_NP_002127.1_1	-314	-307	ttcgGTCGTGGAggaa	0.52
+ctatggc|gccatag	D	ctatggc	lcl|NM_002136.4_cds_NP_002127.1_1	-100	-94	gcccCTATGGCggtg	0.51
+ctatggc|gccatag	D	ctatggc	lcl|NM_002136.4_cds_NP_002127.1_1	-52	-46	gtggCTATGGCggtt	0.51
+ctatggc|gccatag	D	ctatggc	lcl|NM_002136.4_cds_NP_002127.1_1	-25	-19	gtagCTATGGCagtg	0.51
+acgaccac|gtggtcgt	R	acgaccac	lcl|NM_002136.4_cds_NP_002127.1_1	-353	-346	ctccACGACCACcacc	0.42
+acgaccac|gtggtcgt	R	acgaccac	lcl|NM_002136.4_cds_NP_002127.1_1	-296	-289	caccACGACCACtgaa	0.42
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_002136.4_cds_NP_002127.1_1	-657	-650	cttaACTGTGAAaaag	0.25
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_002136.4_cds_NP_002127.1_1	-459	-452	ccatACTGTGAAtggc	0.25
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_002136.4_cds_NP_002127.1_1	-443	-436	cacaACTGTGAAgtta	0.25
+caaagc|gctttg	D	caaagc	lcl|NM_002136.4_cds_NP_002127.1_1	-419	-414	ctgtCAAAGCaaga	0.24
+caaagc|gctttg	R	caaagc	lcl|NM_002136.4_cds_NP_002127.1_1	-899	-894	gtttCAAAGCtcaa	0.24
+caaagc|gctttg	R	caaagc	lcl|NM_002136.4_cds_NP_002127.1_1	-797	-792	aaccCAAAGCccct	0.24
+caaagc|gctttg	R	caaagc	lcl|NM_002136.4_cds_NP_002127.1_1	-524	-519	aaggCAAAGCccct	0.24
+caaagc|gctttg	R	caaagc	lcl|NM_002136.4_cds_NP_002127.1_1	-284	-279	ccacCAAAGCcacc	0.24
+cgccata|tatggcg	R	cgccata	lcl|NM_002136.4_cds_NP_002127.1_1	-99	-93	ccacCGCCATAgggg	0.21
+cgccata|tatggcg	R	cgccata	lcl|NM_002136.4_cds_NP_002127.1_1	-51	-45	gaacCGCCATAgcca	0.21
+cacgacca|tggtcgtg	R	cacgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-352	-345	cctcCACGACCAccac	0.18
+cacgacca|tggtcgtg	R	cacgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-295	-288	ccacCACGACCActga	0.18
+cgtgga|tccacg	D	cgtgga	lcl|NM_002136.4_cds_NP_002127.1_1	-490	-485	actcCGTGGAtaag	0.08
+cgtgga|tccacg	D	cgtgga	lcl|NM_002136.4_cds_NP_002127.1_1	-348	-343	tggtCGTGGAggtg	0.08
+cgtgga|tccacg	D	cgtgga	lcl|NM_002136.4_cds_NP_002127.1_1	-312	-307	cggtCGTGGAggaa	0.08
+accgccat|atggcggt	R	accgccat	lcl|NM_002136.4_cds_NP_002127.1_1	-98	-91	ctccACCGCCATaggg	0.08
+accgccat|atggcggt	R	accgccat	lcl|NM_002136.4_cds_NP_002127.1_1	-50	-43	tggaACCGCCATagcc	0.08
+; Host name	biow
+; Job started	2021-01-31.203259
+; Job done	2021-01-31.203259
+; Seconds	0.16
+;	user	0.16
+;	system	0
+;	cuser	0
+;	csystem	0

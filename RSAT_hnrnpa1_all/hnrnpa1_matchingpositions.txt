@@ -1,0 +1,563 @@
+; dna-pattern  -v 1 -pl $RSAT/public_html/tmp/apache/2021/02/01/dna-pattern_2021-02-01.030120_lvxnTs.pat -i $RSAT/public_html/tmp/apache/2021/02/01/tmp_sequence_2021-02-01.030010_xr4wbr.fasta.fasta -format fasta -return sites -origin -0 -N 4 -return limits -noov -2str -subst 0
+; Citation: van Helden et al. (2000). Yeast 16(2), 177-187.
+; Input file           	$RSAT/public_html/tmp/apache/2021/02/01/tmp_sequence_2021-02-01.030010_xr4wbr.fasta.fasta
+; Input format         	fasta
+; Pattern file         	$RSAT/public_html/tmp/apache/2021/02/01/dna-pattern_2021-02-01.030120_lvxnTs.pat
+; Search method        	regexp
+; Threshold            	0
+; Allowed substitutions	0
+; Return fields
+;                     	limits
+;                     	sites
+; Patterns
+; 	seq	id	score
+; 	cgccatag	cgccatag|ctatggcg	3.67
+; 	ccgccata	ccgccata|tatggcgg	3.39
+; 	acgacc	acgacc|ggtcgt	2.81
+; 	cctcca	cctcca|tggagg	2.68
+; 	cgccata	cgccata|tatggcg	2.40
+; 	catagc	catagc|gctatg	2.34
+; 	ccacgacc	ccacgacc|ggtcgtgg	2.31
+; 	ccacca	ccacca|tggtgg	2.10
+; 	ctatggc	ctatggc|gccatag	2.08
+; 	acgacca	acgacca|tggtcgt	2.02
+; 	ccatagc	ccatagc|gctatgg	1.92
+; 	gccatagc	gccatagc|gctatggc	1.67
+; 	cacgacc	cacgacc|ggtcgtg	1.66
+; 	ccacga	ccacga|tcgtgg	1.63
+; 	ccactgcc	ccactgcc|ggcagtgg	1.48
+; 	ccacgac	ccacgac|gtcgtgg	1.45
+; 	gtggca	gtggca|tgccac	1.37
+; 	accgcca	accgcca|tggcggt	1.32
+; 	ccatagcc	ccatagcc|ggctatgg	1.28
+; 	ccatag	ccatag|ctatgg	1.26
+; 	atggcgg	atggcgg|ccgccat	0.96
+; 	caaagc	caaagc|gctttg	0.94
+; 	cgacca	cgacca|tggtcg	0.84
+; 	cacgac	cacgac|gtcgtg	0.71
+; 	ccgcca	ccgcca|tggcgg	0.54
+; 	caaagcc	caaagcc|ggctttg	0.49
+; 	gtcgtgga	gtcgtgga|tccacgac	0.40
+; 	ggtgga	ggtgga|tccacc	0.39
+; 	cactgcc	cactgcc|ggcagtg	0.32
+; 	acgaccac	acgaccac|gtggtcgt	0.30
+; 	gtggtgga	gtggtgga|tccaccac	0.28
+; 	atagcc	atagcc|ggctat	0.25
+; 	catagcc	catagcc|ggctatg	0.22
+; 	gccata	gccata|tatggc	0.12
+; 	ccaaagcc	ccaaagcc|ggctttgg	0.12
+; 	accgcc	accgcc|ggcggt	0.08
+; 	actgtgaa	actgtgaa|ttcacagt	0.07
+; 	cacgacca	cacgacca|tggtcgtg	0.06
+; 	accacc	accacc|ggtggt	0.05
+; 
+; Matching positions
+; PatID	Strand	Pattern	SeqID	Start	End	matching_seq	Score
+START_END	DR	-	lcl|NM_002136.4_cds_NP_002127.1_1	-963	-1	-	0.00
+cgccatag|ctatggcg	R	cgccatag	lcl|NM_002136.4_cds_NP_002127.1_1	-100	-93	ccacCGCCATAGgggc	3.67
+cgccatag|ctatggcg	R	cgccatag	lcl|NM_002136.4_cds_NP_002127.1_1	-52	-45	gaacCGCCATAGccac	3.67
+ccgccata|tatggcgg	R	ccgccata	lcl|NM_002136.4_cds_NP_002127.1_1	-99	-92	tccaCCGCCATAgggg	3.39
+ccgccata|tatggcgg	R	ccgccata	lcl|NM_002136.4_cds_NP_002127.1_1	-51	-44	ggaaCCGCCATAgcca	3.39
+acgacc|ggtcgt	D	acgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-503	-498	tttgACGACCatga	2.81
+acgacc|ggtcgt	R	acgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-351	-346	ctccACGACCacca	2.81
+acgacc|ggtcgt	R	acgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-315	-310	ctccACGACCgaag	2.81
+acgacc|ggtcgt	R	acgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-294	-289	caccACGACCactg	2.81
+cctcca|tggagg	R	cctcca	lcl|NM_002136.4_cds_NP_002127.1_1	-910	-905	caacCCTCCAatga	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_002136.4_cds_NP_002127.1_1	-770	-765	acctCCTCCAcagt	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_002136.4_cds_NP_002127.1_1	-346	-341	accaCCTCCAcgac	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_002136.4_cds_NP_002127.1_1	-310	-305	gtttCCTCCAcgac	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_002136.4_cds_NP_002127.1_1	-202	-197	accaCCTCCAaaat	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_002136.4_cds_NP_002127.1_1	-121	-116	tctgCCTCCAaaat	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_002136.4_cds_NP_002127.1_1	-91	-86	ttggCCTCCAccgc	2.68
+cgccata|tatggcg	R	cgccata	lcl|NM_002136.4_cds_NP_002127.1_1	-99	-93	ccacCGCCATAgggg	2.40
+cgccata|tatggcg	R	cgccata	lcl|NM_002136.4_cds_NP_002127.1_1	-51	-45	gaacCGCCATAgcca	2.40
+catagc|gctatg	R	catagc	lcl|NM_002136.4_cds_NP_002127.1_1	-753	-748	cattCATAGCtgca	2.34
+catagc|gctatg	R	catagc	lcl|NM_002136.4_cds_NP_002127.1_1	-53	-48	ccgcCATAGCcacc	2.34
+catagc|gctatg	R	catagc	lcl|NM_002136.4_cds_NP_002127.1_1	-26	-21	ctgcCATAGCtact	2.34
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-351	-344	acctCCACGACCacca	2.31
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-315	-308	tcctCCACGACCgaag	2.31
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-294	-287	gccaCCACGACCactg	2.31
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-637	-632	aatgCCACCAacaa	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-358	-353	accaCCACCAaagt	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-289	-284	aaagCCACCAcgac	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-280	-275	gctgCCACCAaagc	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-268	-263	accaCCACCAcggc	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-262	-257	atatCCACCAccac	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-253	-248	actgCCACCAtatc	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_002136.4_cds_NP_002127.1_1	-196	-191	gcttCCACCAcctc	2.10
+ctatggc|gccatag	D	ctatggc	lcl|NM_002136.4_cds_NP_002127.1_1	-100	-94	gcccCTATGGCggtg	2.08
+ctatggc|gccatag	D	ctatggc	lcl|NM_002136.4_cds_NP_002127.1_1	-52	-46	gtggCTATGGCggtt	2.08
+ctatggc|gccatag	D	ctatggc	lcl|NM_002136.4_cds_NP_002127.1_1	-25	-19	gtagCTATGGCagtg	2.08
+acgacca|tggtcgt	D	acgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-503	-497	tttgACGACCAtgac	2.02
+acgacca|tggtcgt	R	acgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-352	-346	ctccACGACCAccac	2.02
+acgacca|tggtcgt	R	acgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-295	-289	caccACGACCActga	2.02
+ccatagc|gctatgg	R	ccatagc	lcl|NM_002136.4_cds_NP_002127.1_1	-53	-47	accgCCATAGCcacc	1.92
+ccatagc|gctatgg	R	ccatagc	lcl|NM_002136.4_cds_NP_002127.1_1	-26	-20	actgCCATAGCtact	1.92
+gccatagc|gctatggc	R	gccatagc	lcl|NM_002136.4_cds_NP_002127.1_1	-53	-46	aaccGCCATAGCcacc	1.67
+gccatagc|gctatggc	R	gccatagc	lcl|NM_002136.4_cds_NP_002127.1_1	-26	-19	cactGCCATAGCtact	1.67
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-351	-345	cctcCACGACCacca	1.66
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-315	-309	cctcCACGACCgaag	1.66
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_002136.4_cds_NP_002127.1_1	-294	-288	ccacCACGACCactg	1.66
+ccacga|tcgtgg	D	ccacga	lcl|NM_002136.4_cds_NP_002127.1_1	-69	-64	aaaaCCACGAaacc	1.63
+ccacga|tcgtgg	R	ccacga	lcl|NM_002136.4_cds_NP_002127.1_1	-349	-344	acctCCACGAccac	1.63
+ccacga|tcgtgg	R	ccacga	lcl|NM_002136.4_cds_NP_002127.1_1	-313	-308	tcctCCACGAccga	1.63
+ccacga|tcgtgg	R	ccacga	lcl|NM_002136.4_cds_NP_002127.1_1	-292	-287	gccaCCACGAccac	1.63
+ccactgcc|ggcagtgg	R	ccactgcc	lcl|NM_002136.4_cds_NP_002127.1_1	-543	-536	cttgCCACTGCCtcgg	1.48
+ccactgcc|ggcagtgg	R	ccactgcc	lcl|NM_002136.4_cds_NP_002127.1_1	-249	-242	atccCCACTGCCacca	1.48
+ccactgcc|ggcagtgg	R	ccactgcc	lcl|NM_002136.4_cds_NP_002127.1_1	-21	-14	tctgCCACTGCCatag	1.48
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_002136.4_cds_NP_002127.1_1	-350	-344	acctCCACGACcacc	1.45
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_002136.4_cds_NP_002127.1_1	-314	-308	tcctCCACGACcgaa	1.45
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_002136.4_cds_NP_002127.1_1	-293	-287	gccaCCACGACcact	1.45
+gtggca|tgccac	D	gtggca	lcl|NM_002136.4_cds_NP_002127.1_1	-635	-630	gttgGTGGCAttaa	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_002136.4_cds_NP_002127.1_1	-539	-534	ggcaGTGGCAagaa	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_002136.4_cds_NP_002127.1_1	-278	-273	tttgGTGGCAgccg	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_002136.4_cds_NP_002127.1_1	-251	-246	tatgGTGGCAgtgg	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_002136.4_cds_NP_002127.1_1	-17	-12	ggcaGTGGCAgaag	1.37
+gtggca|tgccac	R	gtggca	lcl|NM_002136.4_cds_NP_002127.1_1	-778	-773	cacaGTGGCAtatg	1.37
+accgcca|tggcggt	R	accgcca	lcl|NM_002136.4_cds_NP_002127.1_1	-97	-91	ctccACCGCCAtagg	1.32
+accgcca|tggcggt	R	accgcca	lcl|NM_002136.4_cds_NP_002127.1_1	-49	-43	tggaACCGCCAtagc	1.32
+ccatagcc|ggctatgg	R	ccatagcc	lcl|NM_002136.4_cds_NP_002127.1_1	-54	-47	accgCCATAGCCacct	1.28
+ccatag|ctatgg	R	ccatag	lcl|NM_002136.4_cds_NP_002127.1_1	-100	-95	accgCCATAGgggc	1.26
+ccatag|ctatgg	R	ccatag	lcl|NM_002136.4_cds_NP_002127.1_1	-52	-47	accgCCATAGccac	1.26
+ccatag|ctatgg	R	ccatag	lcl|NM_002136.4_cds_NP_002127.1_1	-25	-20	actgCCATAGctac	1.26
+atggcgg|ccgccat	D	atggcgg	lcl|NM_002136.4_cds_NP_002127.1_1	-98	-92	ccctATGGCGGtgga	0.96
+atggcgg|ccgccat	D	atggcgg	lcl|NM_002136.4_cds_NP_002127.1_1	-50	-44	ggctATGGCGGttcc	0.96
+caaagc|gctttg	D	caaagc	lcl|NM_002136.4_cds_NP_002127.1_1	-419	-414	ctgtCAAAGCaaga	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_002136.4_cds_NP_002127.1_1	-899	-894	gtttCAAAGCtcaa	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_002136.4_cds_NP_002127.1_1	-797	-792	aaccCAAAGCccct	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_002136.4_cds_NP_002127.1_1	-524	-519	aaggCAAAGCccct	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_002136.4_cds_NP_002127.1_1	-284	-279	ccacCAAAGCcacc	0.94
+cgacca|tggtcg	D	cgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-502	-497	ttgaCGACCAtgac	0.84
+cgacca|tggtcg	R	cgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-352	-347	tccaCGACCAccac	0.84
+cgacca|tggtcg	R	cgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-295	-290	accaCGACCActga	0.84
+cacgac|gtcgtg	R	cacgac	lcl|NM_002136.4_cds_NP_002127.1_1	-350	-345	cctcCACGACcacc	0.71
+cacgac|gtcgtg	R	cacgac	lcl|NM_002136.4_cds_NP_002127.1_1	-314	-309	cctcCACGACcgaa	0.71
+cacgac|gtcgtg	R	cacgac	lcl|NM_002136.4_cds_NP_002127.1_1	-293	-288	ccacCACGACcact	0.71
+ccgcca|tggcgg	R	ccgcca	lcl|NM_002136.4_cds_NP_002127.1_1	-97	-92	tccaCCGCCAtagg	0.54
+ccgcca|tggcgg	R	ccgcca	lcl|NM_002136.4_cds_NP_002127.1_1	-49	-44	ggaaCCGCCAtagc	0.54
+caaagcc|ggctttg	R	caaagcc	lcl|NM_002136.4_cds_NP_002127.1_1	-798	-792	aaccCAAAGCCcctg	0.49
+caaagcc|ggctttg	R	caaagcc	lcl|NM_002136.4_cds_NP_002127.1_1	-525	-519	aaggCAAAGCCcctt	0.49
+caaagcc|ggctttg	R	caaagcc	lcl|NM_002136.4_cds_NP_002127.1_1	-285	-279	ccacCAAAGCCacca	0.49
+gtcgtgga|tccacgac	D	gtcgtgga	lcl|NM_002136.4_cds_NP_002127.1_1	-350	-343	ggtgGTCGTGGAggtg	0.40
+gtcgtgga|tccacgac	D	gtcgtgga	lcl|NM_002136.4_cds_NP_002127.1_1	-314	-307	ttcgGTCGTGGAggaa	0.40
+ggtgga|tccacc	D	ggtgga	lcl|NM_002136.4_cds_NP_002127.1_1	-763	-758	aggaGGTGGAtgca	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_002136.4_cds_NP_002127.1_1	-730	-725	acaaGGTGGAtgga	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_002136.4_cds_NP_002127.1_1	-261	-256	tggtGGTGGAtatg	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_002136.4_cds_NP_002127.1_1	-195	-190	aggtGGTGGAagct	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_002136.4_cds_NP_002127.1_1	-93	-88	tggcGGTGGAggcc	0.39
+cactgcc|ggcagtg	R	cactgcc	lcl|NM_002136.4_cds_NP_002127.1_1	-543	-537	ttgcCACTGCCtcgg	0.32
+cactgcc|ggcagtg	R	cactgcc	lcl|NM_002136.4_cds_NP_002127.1_1	-249	-243	tcccCACTGCCacca	0.32
+cactgcc|ggcagtg	R	cactgcc	lcl|NM_002136.4_cds_NP_002127.1_1	-21	-15	ctgcCACTGCCatag	0.32
+acgaccac|gtggtcgt	R	acgaccac	lcl|NM_002136.4_cds_NP_002127.1_1	-353	-346	ctccACGACCACcacc	0.30
+acgaccac|gtggtcgt	R	acgaccac	lcl|NM_002136.4_cds_NP_002127.1_1	-296	-289	caccACGACCACtgaa	0.30
+gtggtgga|tccaccac	D	gtggtgga	lcl|NM_002136.4_cds_NP_002127.1_1	-263	-256	ggtgGTGGTGGAtatg	0.28
+gtggtgga|tccaccac	D	gtggtgga	lcl|NM_002136.4_cds_NP_002127.1_1	-197	-190	ggagGTGGTGGAagct	0.28
+atagcc|ggctat	R	atagcc	lcl|NM_002136.4_cds_NP_002127.1_1	-237	-232	cattATAGCCatcc	0.25
+atagcc|ggctat	R	atagcc	lcl|NM_002136.4_cds_NP_002127.1_1	-54	-49	cgccATAGCCacct	0.25
+catagcc|ggctatg	R	catagcc	lcl|NM_002136.4_cds_NP_002127.1_1	-54	-48	ccgcCATAGCCacct	0.22
+gccata|tatggc	R	gccata	lcl|NM_002136.4_cds_NP_002127.1_1	-99	-94	caccGCCATAgggg	0.12
+gccata|tatggc	R	gccata	lcl|NM_002136.4_cds_NP_002127.1_1	-51	-46	aaccGCCATAgcca	0.12
+gccata|tatggc	R	gccata	lcl|NM_002136.4_cds_NP_002127.1_1	-24	-19	cactGCCATAgcta	0.12
+ccaaagcc|ggctttgg	R	ccaaagcc	lcl|NM_002136.4_cds_NP_002127.1_1	-798	-791	aaacCCAAAGCCcctg	0.12
+ccaaagcc|ggctttgg	R	ccaaagcc	lcl|NM_002136.4_cds_NP_002127.1_1	-285	-278	gccaCCAAAGCCacca	0.12
+accgcc|ggcggt	R	accgcc	lcl|NM_002136.4_cds_NP_002127.1_1	-96	-91	ctccACCGCCatag	0.08
+accgcc|ggcggt	R	accgcc	lcl|NM_002136.4_cds_NP_002127.1_1	-48	-43	tggaACCGCCatag	0.08
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_002136.4_cds_NP_002127.1_1	-657	-650	cttaACTGTGAAaaag	0.07
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_002136.4_cds_NP_002127.1_1	-459	-452	ccatACTGTGAAtggc	0.07
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_002136.4_cds_NP_002127.1_1	-443	-436	cacaACTGTGAAgtta	0.07
+cacgacca|tggtcgtg	R	cacgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-352	-345	cctcCACGACCAccac	0.06
+cacgacca|tggtcgtg	R	cacgacca	lcl|NM_002136.4_cds_NP_002127.1_1	-295	-288	ccacCACGACCActga	0.06
+accacc|ggtggt	R	accacc	lcl|NM_002136.4_cds_NP_002127.1_1	-357	-352	gaccACCACCaaag	0.05
+accacc|ggtggt	R	accacc	lcl|NM_002136.4_cds_NP_002127.1_1	-342	-337	cgaaACCACCtcca	0.05
+accacc|ggtggt	R	accacc	lcl|NM_002136.4_cds_NP_002127.1_1	-267	-262	caccACCACCacgg	0.05
+accacc|ggtggt	R	accacc	lcl|NM_002136.4_cds_NP_002127.1_1	-198	-193	ttccACCACCtcca	0.05
+START_END	DR	-	lcl|NM_031157.4_cds_NP_112420.1_1	-1119	-1	-	0.00
+cgccatag|ctatggcg	R	cgccatag	lcl|NM_031157.4_cds_NP_112420.1_1	-280	-273	ctccCGCCATAGccac	3.67
+cgccatag|ctatggcg	R	cgccatag	lcl|NM_031157.4_cds_NP_112420.1_1	-100	-93	ccacCGCCATAGgggc	3.67
+cgccatag|ctatggcg	R	cgccatag	lcl|NM_031157.4_cds_NP_112420.1_1	-52	-45	gaacCGCCATAGccac	3.67
+ccgccata|tatggcgg	R	ccgccata	lcl|NM_031157.4_cds_NP_112420.1_1	-279	-272	actcCCGCCATAgcca	3.39
+ccgccata|tatggcgg	R	ccgccata	lcl|NM_031157.4_cds_NP_112420.1_1	-99	-92	tccaCCGCCATAgggg	3.39
+ccgccata|tatggcgg	R	ccgccata	lcl|NM_031157.4_cds_NP_112420.1_1	-51	-44	ggaaCCGCCATAgcca	3.39
+acgacc|ggtcgt	D	acgacc	lcl|NM_031157.4_cds_NP_112420.1_1	-659	-654	tttgACGACCatga	2.81
+acgacc|ggtcgt	R	acgacc	lcl|NM_031157.4_cds_NP_112420.1_1	-507	-502	ctccACGACCacca	2.81
+acgacc|ggtcgt	R	acgacc	lcl|NM_031157.4_cds_NP_112420.1_1	-471	-466	ctccACGACCgaag	2.81
+acgacc|ggtcgt	R	acgacc	lcl|NM_031157.4_cds_NP_112420.1_1	-450	-445	caccACGACCactg	2.81
+cctcca|tggagg	R	cctcca	lcl|NM_031157.4_cds_NP_112420.1_1	-1066	-1061	caacCCTCCAatga	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_031157.4_cds_NP_112420.1_1	-926	-921	acctCCTCCAcagt	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_031157.4_cds_NP_112420.1_1	-502	-497	accaCCTCCAcgac	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_031157.4_cds_NP_112420.1_1	-466	-461	gtttCCTCCAcgac	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_031157.4_cds_NP_112420.1_1	-361	-356	gcctCCTCCAtaac	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_031157.4_cds_NP_112420.1_1	-337	-332	gcttCCTCCAgagt	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_031157.4_cds_NP_112420.1_1	-202	-197	accaCCTCCAaaat	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_031157.4_cds_NP_112420.1_1	-121	-116	tctgCCTCCAaaat	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_031157.4_cds_NP_112420.1_1	-91	-86	ttggCCTCCAccgc	2.68
+cgccata|tatggcg	R	cgccata	lcl|NM_031157.4_cds_NP_112420.1_1	-279	-273	ctccCGCCATAgcca	2.40
+cgccata|tatggcg	R	cgccata	lcl|NM_031157.4_cds_NP_112420.1_1	-99	-93	ccacCGCCATAgggg	2.40
+cgccata|tatggcg	R	cgccata	lcl|NM_031157.4_cds_NP_112420.1_1	-51	-45	gaacCGCCATAgcca	2.40
+catagc|gctatg	R	catagc	lcl|NM_031157.4_cds_NP_112420.1_1	-909	-904	cattCATAGCtgca	2.34
+catagc|gctatg	R	catagc	lcl|NM_031157.4_cds_NP_112420.1_1	-323	-318	cttcCATAGCctct	2.34
+catagc|gctatg	R	catagc	lcl|NM_031157.4_cds_NP_112420.1_1	-281	-276	ccgcCATAGCcact	2.34
+catagc|gctatg	R	catagc	lcl|NM_031157.4_cds_NP_112420.1_1	-263	-258	ctgtCATAGCtgcc	2.34
+catagc|gctatg	R	catagc	lcl|NM_031157.4_cds_NP_112420.1_1	-53	-48	ccgcCATAGCcacc	2.34
+catagc|gctatg	R	catagc	lcl|NM_031157.4_cds_NP_112420.1_1	-26	-21	ctgcCATAGCtact	2.34
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_031157.4_cds_NP_112420.1_1	-507	-500	acctCCACGACCacca	2.31
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_031157.4_cds_NP_112420.1_1	-471	-464	tcctCCACGACCgaag	2.31
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_031157.4_cds_NP_112420.1_1	-450	-443	gccaCCACGACCactg	2.31
+ccacca|tggtgg	R	ccacca	lcl|NM_031157.4_cds_NP_112420.1_1	-793	-788	aatgCCACCAacaa	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_031157.4_cds_NP_112420.1_1	-514	-509	accaCCACCAaagt	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_031157.4_cds_NP_112420.1_1	-445	-440	aaagCCACCAcgac	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_031157.4_cds_NP_112420.1_1	-436	-431	gctgCCACCAaagc	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_031157.4_cds_NP_112420.1_1	-424	-419	accaCCACCAcggc	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_031157.4_cds_NP_112420.1_1	-418	-413	atatCCACCAccac	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_031157.4_cds_NP_112420.1_1	-409	-404	actgCCACCAtatc	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_031157.4_cds_NP_112420.1_1	-370	-365	ataaCCACCAtcat	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_031157.4_cds_NP_112420.1_1	-313	-308	ctgtCCACCActtc	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_031157.4_cds_NP_112420.1_1	-196	-191	gcttCCACCAcctc	2.10
+ctatggc|gccatag	D	ctatggc	lcl|NM_031157.4_cds_NP_112420.1_1	-280	-274	gtggCTATGGCggga	2.08
+ctatggc|gccatag	D	ctatggc	lcl|NM_031157.4_cds_NP_112420.1_1	-100	-94	gcccCTATGGCggtg	2.08
+ctatggc|gccatag	D	ctatggc	lcl|NM_031157.4_cds_NP_112420.1_1	-52	-46	gtggCTATGGCggtt	2.08
+ctatggc|gccatag	D	ctatggc	lcl|NM_031157.4_cds_NP_112420.1_1	-25	-19	gtagCTATGGCagtg	2.08
+acgacca|tggtcgt	D	acgacca	lcl|NM_031157.4_cds_NP_112420.1_1	-659	-653	tttgACGACCAtgac	2.02
+acgacca|tggtcgt	R	acgacca	lcl|NM_031157.4_cds_NP_112420.1_1	-508	-502	ctccACGACCAccac	2.02
+acgacca|tggtcgt	R	acgacca	lcl|NM_031157.4_cds_NP_112420.1_1	-451	-445	caccACGACCActga	2.02
+ccatagc|gctatgg	R	ccatagc	lcl|NM_031157.4_cds_NP_112420.1_1	-323	-317	acttCCATAGCctct	1.92
+ccatagc|gctatgg	R	ccatagc	lcl|NM_031157.4_cds_NP_112420.1_1	-281	-275	cccgCCATAGCcact	1.92
+ccatagc|gctatgg	R	ccatagc	lcl|NM_031157.4_cds_NP_112420.1_1	-53	-47	accgCCATAGCcacc	1.92
+ccatagc|gctatgg	R	ccatagc	lcl|NM_031157.4_cds_NP_112420.1_1	-26	-20	actgCCATAGCtact	1.92
+gccatagc|gctatggc	R	gccatagc	lcl|NM_031157.4_cds_NP_112420.1_1	-281	-274	tcccGCCATAGCcact	1.67
+gccatagc|gctatggc	R	gccatagc	lcl|NM_031157.4_cds_NP_112420.1_1	-53	-46	aaccGCCATAGCcacc	1.67
+gccatagc|gctatggc	R	gccatagc	lcl|NM_031157.4_cds_NP_112420.1_1	-26	-19	cactGCCATAGCtact	1.67
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_031157.4_cds_NP_112420.1_1	-507	-501	cctcCACGACCacca	1.66
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_031157.4_cds_NP_112420.1_1	-471	-465	cctcCACGACCgaag	1.66
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_031157.4_cds_NP_112420.1_1	-450	-444	ccacCACGACCactg	1.66
+ccacga|tcgtgg	D	ccacga	lcl|NM_031157.4_cds_NP_112420.1_1	-69	-64	aaaaCCACGAaacc	1.63
+ccacga|tcgtgg	R	ccacga	lcl|NM_031157.4_cds_NP_112420.1_1	-505	-500	acctCCACGAccac	1.63
+ccacga|tcgtgg	R	ccacga	lcl|NM_031157.4_cds_NP_112420.1_1	-469	-464	tcctCCACGAccga	1.63
+ccacga|tcgtgg	R	ccacga	lcl|NM_031157.4_cds_NP_112420.1_1	-448	-443	gccaCCACGAccac	1.63
+ccactgcc|ggcagtgg	R	ccactgcc	lcl|NM_031157.4_cds_NP_112420.1_1	-699	-692	cttgCCACTGCCtcgg	1.48
+ccactgcc|ggcagtgg	R	ccactgcc	lcl|NM_031157.4_cds_NP_112420.1_1	-405	-398	atccCCACTGCCacca	1.48
+ccactgcc|ggcagtgg	R	ccactgcc	lcl|NM_031157.4_cds_NP_112420.1_1	-288	-281	atagCCACTGCCctgg	1.48
+ccactgcc|ggcagtgg	R	ccactgcc	lcl|NM_031157.4_cds_NP_112420.1_1	-21	-14	tctgCCACTGCCatag	1.48
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_031157.4_cds_NP_112420.1_1	-506	-500	acctCCACGACcacc	1.45
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_031157.4_cds_NP_112420.1_1	-470	-464	tcctCCACGACcgaa	1.45
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_031157.4_cds_NP_112420.1_1	-449	-443	gccaCCACGACcact	1.45
+gtggca|tgccac	D	gtggca	lcl|NM_031157.4_cds_NP_112420.1_1	-791	-786	gttgGTGGCAttaa	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_031157.4_cds_NP_112420.1_1	-695	-690	ggcaGTGGCAagaa	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_031157.4_cds_NP_112420.1_1	-434	-429	tttgGTGGCAgccg	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_031157.4_cds_NP_112420.1_1	-407	-402	tatgGTGGCAgtgg	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_031157.4_cds_NP_112420.1_1	-269	-264	gggaGTGGCAgcta	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_031157.4_cds_NP_112420.1_1	-17	-12	ggcaGTGGCAgaag	1.37
+gtggca|tgccac	R	gtggca	lcl|NM_031157.4_cds_NP_112420.1_1	-934	-929	cacaGTGGCAtatg	1.37
+accgcca|tggcggt	R	accgcca	lcl|NM_031157.4_cds_NP_112420.1_1	-226	-220	taccACCGCCAaagc	1.32
+accgcca|tggcggt	R	accgcca	lcl|NM_031157.4_cds_NP_112420.1_1	-97	-91	ctccACCGCCAtagg	1.32
+accgcca|tggcggt	R	accgcca	lcl|NM_031157.4_cds_NP_112420.1_1	-49	-43	tggaACCGCCAtagc	1.32
+ccatagcc|ggctatgg	R	ccatagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-324	-317	acttCCATAGCCtctg	1.28
+ccatagcc|ggctatgg	R	ccatagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-282	-275	cccgCCATAGCCactg	1.28
+ccatagcc|ggctatgg	R	ccatagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-54	-47	accgCCATAGCCacct	1.28
+ccatag|ctatgg	R	ccatag	lcl|NM_031157.4_cds_NP_112420.1_1	-322	-317	acttCCATAGcctc	1.26
+ccatag|ctatgg	R	ccatag	lcl|NM_031157.4_cds_NP_112420.1_1	-280	-275	cccgCCATAGccac	1.26
+ccatag|ctatgg	R	ccatag	lcl|NM_031157.4_cds_NP_112420.1_1	-100	-95	accgCCATAGgggc	1.26
+ccatag|ctatgg	R	ccatag	lcl|NM_031157.4_cds_NP_112420.1_1	-52	-47	accgCCATAGccac	1.26
+ccatag|ctatgg	R	ccatag	lcl|NM_031157.4_cds_NP_112420.1_1	-25	-20	actgCCATAGctac	1.26
+atggcgg|ccgccat	D	atggcgg	lcl|NM_031157.4_cds_NP_112420.1_1	-278	-272	ggctATGGCGGgagt	0.96
+atggcgg|ccgccat	D	atggcgg	lcl|NM_031157.4_cds_NP_112420.1_1	-98	-92	ccctATGGCGGtgga	0.96
+atggcgg|ccgccat	D	atggcgg	lcl|NM_031157.4_cds_NP_112420.1_1	-50	-44	ggctATGGCGGttcc	0.96
+caaagc|gctttg	D	caaagc	lcl|NM_031157.4_cds_NP_112420.1_1	-575	-570	ctgtCAAAGCaaga	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_031157.4_cds_NP_112420.1_1	-1055	-1050	gtttCAAAGCtcaa	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_031157.4_cds_NP_112420.1_1	-953	-948	aaccCAAAGCccct	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_031157.4_cds_NP_112420.1_1	-680	-675	aaggCAAAGCccct	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_031157.4_cds_NP_112420.1_1	-440	-435	ccacCAAAGCcacc	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_031157.4_cds_NP_112420.1_1	-230	-225	ccgcCAAAGCcgcc	0.94
+cgacca|tggtcg	D	cgacca	lcl|NM_031157.4_cds_NP_112420.1_1	-658	-653	ttgaCGACCAtgac	0.84
+cgacca|tggtcg	R	cgacca	lcl|NM_031157.4_cds_NP_112420.1_1	-508	-503	tccaCGACCAccac	0.84
+cgacca|tggtcg	R	cgacca	lcl|NM_031157.4_cds_NP_112420.1_1	-451	-446	accaCGACCActga	0.84
+cacgac|gtcgtg	R	cacgac	lcl|NM_031157.4_cds_NP_112420.1_1	-506	-501	cctcCACGACcacc	0.71
+cacgac|gtcgtg	R	cacgac	lcl|NM_031157.4_cds_NP_112420.1_1	-470	-465	cctcCACGACcgaa	0.71
+cacgac|gtcgtg	R	cacgac	lcl|NM_031157.4_cds_NP_112420.1_1	-449	-444	ccacCACGACcact	0.71
+ccgcca|tggcgg	R	ccgcca	lcl|NM_031157.4_cds_NP_112420.1_1	-277	-272	actcCCGCCAtagc	0.54
+ccgcca|tggcgg	R	ccgcca	lcl|NM_031157.4_cds_NP_112420.1_1	-226	-221	accaCCGCCAaagc	0.54
+ccgcca|tggcgg	R	ccgcca	lcl|NM_031157.4_cds_NP_112420.1_1	-97	-92	tccaCCGCCAtagg	0.54
+ccgcca|tggcgg	R	ccgcca	lcl|NM_031157.4_cds_NP_112420.1_1	-49	-44	ggaaCCGCCAtagc	0.54
+caaagcc|ggctttg	R	caaagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-954	-948	aaccCAAAGCCcctg	0.49
+caaagcc|ggctttg	R	caaagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-681	-675	aaggCAAAGCCcctt	0.49
+caaagcc|ggctttg	R	caaagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-441	-435	ccacCAAAGCCacca	0.49
+caaagcc|ggctttg	R	caaagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-231	-225	ccgcCAAAGCCgcct	0.49
+gtcgtgga|tccacgac	D	gtcgtgga	lcl|NM_031157.4_cds_NP_112420.1_1	-506	-499	ggtgGTCGTGGAggtg	0.40
+gtcgtgga|tccacgac	D	gtcgtgga	lcl|NM_031157.4_cds_NP_112420.1_1	-470	-463	ttcgGTCGTGGAggaa	0.40
+ggtgga|tccacc	D	ggtgga	lcl|NM_031157.4_cds_NP_112420.1_1	-919	-914	aggaGGTGGAtgca	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_031157.4_cds_NP_112420.1_1	-886	-881	acaaGGTGGAtgga	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_031157.4_cds_NP_112420.1_1	-417	-412	tggtGGTGGAtatg	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_031157.4_cds_NP_112420.1_1	-312	-307	aagtGGTGGAcagg	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_031157.4_cds_NP_112420.1_1	-195	-190	aggtGGTGGAagct	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_031157.4_cds_NP_112420.1_1	-93	-88	tggcGGTGGAggcc	0.39
+cactgcc|ggcagtg	R	cactgcc	lcl|NM_031157.4_cds_NP_112420.1_1	-699	-693	ttgcCACTGCCtcgg	0.32
+cactgcc|ggcagtg	R	cactgcc	lcl|NM_031157.4_cds_NP_112420.1_1	-405	-399	tcccCACTGCCacca	0.32
+cactgcc|ggcagtg	R	cactgcc	lcl|NM_031157.4_cds_NP_112420.1_1	-288	-282	tagcCACTGCCctgg	0.32
+cactgcc|ggcagtg	R	cactgcc	lcl|NM_031157.4_cds_NP_112420.1_1	-21	-15	ctgcCACTGCCatag	0.32
+acgaccac|gtggtcgt	R	acgaccac	lcl|NM_031157.4_cds_NP_112420.1_1	-509	-502	ctccACGACCACcacc	0.30
+acgaccac|gtggtcgt	R	acgaccac	lcl|NM_031157.4_cds_NP_112420.1_1	-452	-445	caccACGACCACtgaa	0.30
+gtggtgga|tccaccac	D	gtggtgga	lcl|NM_031157.4_cds_NP_112420.1_1	-419	-412	ggtgGTGGTGGAtatg	0.28
+gtggtgga|tccaccac	D	gtggtgga	lcl|NM_031157.4_cds_NP_112420.1_1	-314	-307	ggaaGTGGTGGAcagg	0.28
+gtggtgga|tccaccac	D	gtggtgga	lcl|NM_031157.4_cds_NP_112420.1_1	-197	-190	ggagGTGGTGGAagct	0.28
+atagcc|ggctat	R	atagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-393	-388	cattATAGCCatcc	0.25
+atagcc|ggctat	R	atagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-324	-319	ttccATAGCCtctg	0.25
+atagcc|ggctat	R	atagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-282	-277	cgccATAGCCactg	0.25
+atagcc|ggctat	R	atagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-54	-49	cgccATAGCCacct	0.25
+catagcc|ggctatg	R	catagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-324	-318	cttcCATAGCCtctg	0.22
+catagcc|ggctatg	R	catagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-282	-276	ccgcCATAGCCactg	0.22
+catagcc|ggctatg	R	catagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-54	-48	ccgcCATAGCCacct	0.22
+gccata|tatggc	R	gccata	lcl|NM_031157.4_cds_NP_112420.1_1	-279	-274	tcccGCCATAgcca	0.12
+gccata|tatggc	R	gccata	lcl|NM_031157.4_cds_NP_112420.1_1	-99	-94	caccGCCATAgggg	0.12
+gccata|tatggc	R	gccata	lcl|NM_031157.4_cds_NP_112420.1_1	-51	-46	aaccGCCATAgcca	0.12
+gccata|tatggc	R	gccata	lcl|NM_031157.4_cds_NP_112420.1_1	-24	-19	cactGCCATAgcta	0.12
+ccaaagcc|ggctttgg	R	ccaaagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-954	-947	aaacCCAAAGCCcctg	0.12
+ccaaagcc|ggctttgg	R	ccaaagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-441	-434	gccaCCAAAGCCacca	0.12
+ccaaagcc|ggctttgg	R	ccaaagcc	lcl|NM_031157.4_cds_NP_112420.1_1	-231	-224	accgCCAAAGCCgcct	0.12
+accgcc|ggcggt	R	accgcc	lcl|NM_031157.4_cds_NP_112420.1_1	-225	-220	taccACCGCCaaag	0.08
+accgcc|ggcggt	R	accgcc	lcl|NM_031157.4_cds_NP_112420.1_1	-96	-91	ctccACCGCCatag	0.08
+accgcc|ggcggt	R	accgcc	lcl|NM_031157.4_cds_NP_112420.1_1	-48	-43	tggaACCGCCatag	0.08
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_031157.4_cds_NP_112420.1_1	-813	-806	cttaACTGTGAAaaag	0.07
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_031157.4_cds_NP_112420.1_1	-615	-608	ccatACTGTGAAtggc	0.07
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_031157.4_cds_NP_112420.1_1	-599	-592	cacaACTGTGAAgtta	0.07
+cacgacca|tggtcgtg	R	cacgacca	lcl|NM_031157.4_cds_NP_112420.1_1	-508	-501	cctcCACGACCAccac	0.06
+cacgacca|tggtcgtg	R	cacgacca	lcl|NM_031157.4_cds_NP_112420.1_1	-451	-444	ccacCACGACCActga	0.06
+accacc|ggtggt	R	accacc	lcl|NM_031157.4_cds_NP_112420.1_1	-513	-508	gaccACCACCaaag	0.05
+accacc|ggtggt	R	accacc	lcl|NM_031157.4_cds_NP_112420.1_1	-498	-493	cgaaACCACCtcca	0.05
+accacc|ggtggt	R	accacc	lcl|NM_031157.4_cds_NP_112420.1_1	-423	-418	caccACCACCacgg	0.05
+accacc|ggtggt	R	accacc	lcl|NM_031157.4_cds_NP_112420.1_1	-369	-364	cataACCACCatca	0.05
+accacc|ggtggt	R	accacc	lcl|NM_031157.4_cds_NP_112420.1_1	-222	-217	cactACCACCgcca	0.05
+accacc|ggtggt	R	accacc	lcl|NM_031157.4_cds_NP_112420.1_1	-198	-193	ttccACCACCtcca	0.05
+START_END	DR	-	lcl|NM_001011725.3_cds_NP_001011725.1_1	-963	-1	-	0.00
+cgccatag|ctatggcg	R	cgccatag	lcl|NM_001011725.3_cds_NP_001011725.1_1	-100	-93	ccacCGCCATAGgggc	3.67
+cgccatag|ctatggcg	R	cgccatag	lcl|NM_001011725.3_cds_NP_001011725.1_1	-52	-45	gaaaCGCCATAGccac	3.67
+ccgccata|tatggcgg	R	ccgccata	lcl|NM_001011725.3_cds_NP_001011725.1_1	-99	-92	tccaCCGCCATAgggg	3.39
+acgacc|ggtcgt	D	acgacc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-503	-498	tttgACGACCatga	2.81
+acgacc|ggtcgt	R	acgacc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-351	-346	ctccACGACCacca	2.81
+acgacc|ggtcgt	R	acgacc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-315	-310	ctccACGACCaaag	2.81
+acgacc|ggtcgt	R	acgacc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-294	-289	caccACGACCactg	2.81
+cctcca|tggagg	R	cctcca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-910	-905	caacCCTCCAatga	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-770	-765	acctCCTCCAcagt	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-310	-305	gtttCCTCCAcgac	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-202	-197	accaCCTCCAaaat	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-121	-116	tctgCCTCCAaaat	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-91	-86	ttggCCTCCAccgc	2.68
+cgccata|tatggcg	R	cgccata	lcl|NM_001011725.3_cds_NP_001011725.1_1	-99	-93	ccacCGCCATAgggg	2.40
+cgccata|tatggcg	R	cgccata	lcl|NM_001011725.3_cds_NP_001011725.1_1	-51	-45	gaaaCGCCATAgcca	2.40
+catagc|gctatg	R	catagc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-753	-748	tattCATAGCtgca	2.34
+catagc|gctatg	R	catagc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-53	-48	acgcCATAGCcacc	2.34
+catagc|gctatg	R	catagc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-26	-21	ctgcCATAGCtact	2.34
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-351	-344	atctCCACGACCacca	2.31
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-315	-308	tcctCCACGACCaaag	2.31
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-294	-287	gccaCCACGACCactg	2.31
+ccacca|tggtgg	R	ccacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-637	-632	aatgCCACCAacaa	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-358	-353	accaCCACCAaagt	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-289	-284	aaagCCACCAcgac	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-280	-275	gctgCCACCAaagc	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-268	-263	accaCCACCAcagc	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-262	-257	atatCCACCAccac	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-253	-248	actgCCACCAtatc	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-196	-191	gcttCCACCAcctc	2.10
+ctatggc|gccatag	D	ctatggc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-100	-94	gcccCTATGGCggtg	2.08
+ctatggc|gccatag	D	ctatggc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-52	-46	gtggCTATGGCgttt	2.08
+ctatggc|gccatag	D	ctatggc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-25	-19	gtagCTATGGCagtg	2.08
+acgacca|tggtcgt	D	acgacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-503	-497	tttgACGACCAtgac	2.02
+acgacca|tggtcgt	R	acgacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-352	-346	ctccACGACCAccac	2.02
+acgacca|tggtcgt	R	acgacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-316	-310	ctccACGACCAaagt	2.02
+acgacca|tggtcgt	R	acgacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-295	-289	caccACGACCActga	2.02
+ccatagc|gctatgg	R	ccatagc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-53	-47	aacgCCATAGCcacc	1.92
+ccatagc|gctatgg	R	ccatagc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-26	-20	actgCCATAGCtact	1.92
+gccatagc|gctatggc	R	gccatagc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-53	-46	aaacGCCATAGCcacc	1.67
+gccatagc|gctatggc	R	gccatagc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-26	-19	cactGCCATAGCtact	1.67
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-351	-345	tctcCACGACCacca	1.66
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-315	-309	cctcCACGACCaaag	1.66
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-294	-288	ccacCACGACCactg	1.66
+ccacga|tcgtgg	R	ccacga	lcl|NM_001011725.3_cds_NP_001011725.1_1	-349	-344	atctCCACGAccac	1.63
+ccacga|tcgtgg	R	ccacga	lcl|NM_001011725.3_cds_NP_001011725.1_1	-313	-308	tcctCCACGAccaa	1.63
+ccacga|tcgtgg	R	ccacga	lcl|NM_001011725.3_cds_NP_001011725.1_1	-292	-287	gccaCCACGAccac	1.63
+ccactgcc|ggcagtgg	R	ccactgcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-543	-536	cttgCCACTGCCtcgg	1.48
+ccactgcc|ggcagtgg	R	ccactgcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-249	-242	atccCCACTGCCacca	1.48
+ccactgcc|ggcagtgg	R	ccactgcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-21	-14	tctgCCACTGCCatag	1.48
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_001011725.3_cds_NP_001011725.1_1	-350	-344	atctCCACGACcacc	1.45
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_001011725.3_cds_NP_001011725.1_1	-314	-308	tcctCCACGACcaaa	1.45
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_001011725.3_cds_NP_001011725.1_1	-293	-287	gccaCCACGACcact	1.45
+gtggca|tgccac	D	gtggca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-635	-630	gttgGTGGCAttaa	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-539	-534	ggcaGTGGCAagaa	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-278	-273	tttgGTGGCAgctg	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-251	-246	tatgGTGGCAgtgg	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-17	-12	ggcaGTGGCAgaag	1.37
+gtggca|tgccac	R	gtggca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-778	-773	cacaGTGGCAtatg	1.37
+accgcca|tggcggt	R	accgcca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-97	-91	ctccACCGCCAtagg	1.32
+ccatagcc|ggctatgg	R	ccatagcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-54	-47	aacgCCATAGCCacct	1.28
+ccatag|ctatgg	R	ccatag	lcl|NM_001011725.3_cds_NP_001011725.1_1	-100	-95	accgCCATAGgggc	1.26
+ccatag|ctatgg	R	ccatag	lcl|NM_001011725.3_cds_NP_001011725.1_1	-52	-47	aacgCCATAGccac	1.26
+ccatag|ctatgg	R	ccatag	lcl|NM_001011725.3_cds_NP_001011725.1_1	-25	-20	actgCCATAGctac	1.26
+atggcgg|ccgccat	D	atggcgg	lcl|NM_001011725.3_cds_NP_001011725.1_1	-98	-92	ccctATGGCGGtgga	0.96
+caaagc|gctttg	D	caaagc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-419	-414	ctgcCAAAGCaaga	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-899	-894	gtttCAAAGCtcaa	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-797	-792	aaccCAAAGCccct	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-524	-519	aaggCAAAGCccct	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-284	-279	ccacCAAAGCcacc	0.94
+cgacca|tggtcg	D	cgacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-502	-497	ttgaCGACCAtgac	0.84
+cgacca|tggtcg	R	cgacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-352	-347	tccaCGACCAccac	0.84
+cgacca|tggtcg	R	cgacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-316	-311	tccaCGACCAaagt	0.84
+cgacca|tggtcg	R	cgacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-295	-290	accaCGACCActga	0.84
+cacgac|gtcgtg	R	cacgac	lcl|NM_001011725.3_cds_NP_001011725.1_1	-350	-345	tctcCACGACcacc	0.71
+cacgac|gtcgtg	R	cacgac	lcl|NM_001011725.3_cds_NP_001011725.1_1	-314	-309	cctcCACGACcaaa	0.71
+cacgac|gtcgtg	R	cacgac	lcl|NM_001011725.3_cds_NP_001011725.1_1	-293	-288	ccacCACGACcact	0.71
+ccgcca|tggcgg	R	ccgcca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-97	-92	tccaCCGCCAtagg	0.54
+caaagcc|ggctttg	R	caaagcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-798	-792	aaccCAAAGCCcctg	0.49
+caaagcc|ggctttg	R	caaagcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-525	-519	aaggCAAAGCCcctt	0.49
+caaagcc|ggctttg	R	caaagcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-285	-279	ccacCAAAGCCacca	0.49
+gtcgtgga|tccacgac	D	gtcgtgga	lcl|NM_001011725.3_cds_NP_001011725.1_1	-350	-343	ggtgGTCGTGGAgatg	0.40
+gtcgtgga|tccacgac	D	gtcgtgga	lcl|NM_001011725.3_cds_NP_001011725.1_1	-314	-307	tttgGTCGTGGAggaa	0.40
+ggtgga|tccacc	D	ggtgga	lcl|NM_001011725.3_cds_NP_001011725.1_1	-763	-758	aggaGGTGGAtgca	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_001011725.3_cds_NP_001011725.1_1	-730	-725	acaaGGTGGAtgga	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_001011725.3_cds_NP_001011725.1_1	-261	-256	tggtGGTGGAtatg	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_001011725.3_cds_NP_001011725.1_1	-195	-190	aggtGGTGGAagct	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_001011725.3_cds_NP_001011725.1_1	-93	-88	tggcGGTGGAggcc	0.39
+cactgcc|ggcagtg	R	cactgcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-543	-537	ttgcCACTGCCtcgg	0.32
+cactgcc|ggcagtg	R	cactgcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-249	-243	tcccCACTGCCacca	0.32
+cactgcc|ggcagtg	R	cactgcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-21	-15	ctgcCACTGCCatag	0.32
+acgaccac|gtggtcgt	R	acgaccac	lcl|NM_001011725.3_cds_NP_001011725.1_1	-353	-346	ctccACGACCACcacc	0.30
+acgaccac|gtggtcgt	R	acgaccac	lcl|NM_001011725.3_cds_NP_001011725.1_1	-296	-289	caccACGACCACtgaa	0.30
+gtggtgga|tccaccac	D	gtggtgga	lcl|NM_001011725.3_cds_NP_001011725.1_1	-263	-256	ggtgGTGGTGGAtatg	0.28
+gtggtgga|tccaccac	D	gtggtgga	lcl|NM_001011725.3_cds_NP_001011725.1_1	-197	-190	ggagGTGGTGGAagct	0.28
+atagcc|ggctat	R	atagcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-237	-232	cattATAGCCatcc	0.25
+atagcc|ggctat	R	atagcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-54	-49	cgccATAGCCacct	0.25
+catagcc|ggctatg	R	catagcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-54	-48	acgcCATAGCCacct	0.22
+gccata|tatggc	R	gccata	lcl|NM_001011725.3_cds_NP_001011725.1_1	-99	-94	caccGCCATAgggg	0.12
+gccata|tatggc	R	gccata	lcl|NM_001011725.3_cds_NP_001011725.1_1	-51	-46	aaacGCCATAgcca	0.12
+gccata|tatggc	R	gccata	lcl|NM_001011725.3_cds_NP_001011725.1_1	-24	-19	cactGCCATAgcta	0.12
+ccaaagcc|ggctttgg	R	ccaaagcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-798	-791	aaacCCAAAGCCcctg	0.12
+ccaaagcc|ggctttgg	R	ccaaagcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-285	-278	gccaCCAAAGCCacca	0.12
+accgcc|ggcggt	R	accgcc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-96	-91	ctccACCGCCatag	0.08
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_001011725.3_cds_NP_001011725.1_1	-657	-650	cttaACTGTGAAaaag	0.07
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_001011725.3_cds_NP_001011725.1_1	-459	-452	ccatACTGTGAAgggc	0.07
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_001011725.3_cds_NP_001011725.1_1	-443	-436	cacaACTGTGAAgtta	0.07
+cacgacca|tggtcgtg	R	cacgacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-352	-345	tctcCACGACCAccac	0.06
+cacgacca|tggtcgtg	R	cacgacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-316	-309	cctcCACGACCAaagt	0.06
+cacgacca|tggtcgtg	R	cacgacca	lcl|NM_001011725.3_cds_NP_001011725.1_1	-295	-288	ccacCACGACCActga	0.06
+accacc|ggtggt	R	accacc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-357	-352	gaccACCACCaaag	0.05
+accacc|ggtggt	R	accacc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-267	-262	caccACCACCacag	0.05
+accacc|ggtggt	R	accacc	lcl|NM_001011725.3_cds_NP_001011725.1_1	-198	-193	ttccACCACCtcca	0.05
+START_END	DR	-	lcl|NM_001011724.3_cds_NP_001011724.1_1	-963	-1	-	0.00
+cgccatag|ctatggcg	R	cgccatag	lcl|NM_001011724.3_cds_NP_001011724.1_1	-100	-93	ccacCGCCATAGgggc	3.67
+cgccatag|ctatggcg	R	cgccatag	lcl|NM_001011724.3_cds_NP_001011724.1_1	-52	-45	gaaaCGCCATAGccac	3.67
+ccgccata|tatggcgg	R	ccgccata	lcl|NM_001011724.3_cds_NP_001011724.1_1	-99	-92	tccaCCGCCATAgggg	3.39
+acgacc|ggtcgt	D	acgacc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-503	-498	tttgACGACCatga	2.81
+acgacc|ggtcgt	R	acgacc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-351	-346	ctccACGACCacca	2.81
+acgacc|ggtcgt	R	acgacc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-315	-310	ctccACGACCaaag	2.81
+acgacc|ggtcgt	R	acgacc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-294	-289	caccACGACCactg	2.81
+cctcca|tggagg	R	cctcca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-910	-905	caacCCTCCAatga	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-770	-765	acctCCTCCAcagt	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-310	-305	gtttCCTCCAcgac	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-202	-197	accaCCTCCAaaat	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-121	-116	tctgCCTCCAaaat	2.68
+cctcca|tggagg	R	cctcca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-91	-86	ttggCCTCCAccgc	2.68
+cgccata|tatggcg	R	cgccata	lcl|NM_001011724.3_cds_NP_001011724.1_1	-99	-93	ccacCGCCATAgggg	2.40
+cgccata|tatggcg	R	cgccata	lcl|NM_001011724.3_cds_NP_001011724.1_1	-51	-45	gaaaCGCCATAgcca	2.40
+catagc|gctatg	R	catagc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-753	-748	tattCATAGCtgca	2.34
+catagc|gctatg	R	catagc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-53	-48	acgcCATAGCcacc	2.34
+catagc|gctatg	R	catagc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-26	-21	ctgcCATAGCtact	2.34
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-351	-344	atctCCACGACCacca	2.31
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-315	-308	tcctCCACGACCaaag	2.31
+ccacgacc|ggtcgtgg	R	ccacgacc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-294	-287	gccaCCACGACCactg	2.31
+ccacca|tggtgg	R	ccacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-637	-632	aatgCCACCAacaa	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-358	-353	accaCCACCAaagt	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-289	-284	aaagCCACCAcgac	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-280	-275	gctgCCACCAaagc	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-268	-263	accaCCACCAcagc	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-262	-257	atatCCACCAccac	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-253	-248	actgCCACCAtatc	2.10
+ccacca|tggtgg	R	ccacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-196	-191	gcttCCACCAcctc	2.10
+ctatggc|gccatag	D	ctatggc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-100	-94	gcccCTATGGCggtg	2.08
+ctatggc|gccatag	D	ctatggc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-52	-46	gtggCTATGGCgttt	2.08
+ctatggc|gccatag	D	ctatggc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-25	-19	gtagCTATGGCagtg	2.08
+acgacca|tggtcgt	D	acgacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-503	-497	tttgACGACCAtgac	2.02
+acgacca|tggtcgt	R	acgacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-352	-346	ctccACGACCAccac	2.02
+acgacca|tggtcgt	R	acgacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-316	-310	ctccACGACCAaagt	2.02
+acgacca|tggtcgt	R	acgacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-295	-289	caccACGACCActga	2.02
+ccatagc|gctatgg	R	ccatagc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-53	-47	aacgCCATAGCcacc	1.92
+ccatagc|gctatgg	R	ccatagc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-26	-20	actgCCATAGCtact	1.92
+gccatagc|gctatggc	R	gccatagc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-53	-46	aaacGCCATAGCcacc	1.67
+gccatagc|gctatggc	R	gccatagc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-26	-19	cactGCCATAGCtact	1.67
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-351	-345	tctcCACGACCacca	1.66
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-315	-309	cctcCACGACCaaag	1.66
+cacgacc|ggtcgtg	R	cacgacc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-294	-288	ccacCACGACCactg	1.66
+ccacga|tcgtgg	R	ccacga	lcl|NM_001011724.3_cds_NP_001011724.1_1	-349	-344	atctCCACGAccac	1.63
+ccacga|tcgtgg	R	ccacga	lcl|NM_001011724.3_cds_NP_001011724.1_1	-313	-308	tcctCCACGAccaa	1.63
+ccacga|tcgtgg	R	ccacga	lcl|NM_001011724.3_cds_NP_001011724.1_1	-292	-287	gccaCCACGAccac	1.63
+ccactgcc|ggcagtgg	R	ccactgcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-543	-536	cttgCCACTGCCtcgg	1.48
+ccactgcc|ggcagtgg	R	ccactgcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-249	-242	atccCCACTGCCacca	1.48
+ccactgcc|ggcagtgg	R	ccactgcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-21	-14	tctgCCACTGCCatag	1.48
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_001011724.3_cds_NP_001011724.1_1	-350	-344	atctCCACGACcacc	1.45
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_001011724.3_cds_NP_001011724.1_1	-314	-308	tcctCCACGACcaaa	1.45
+ccacgac|gtcgtgg	R	ccacgac	lcl|NM_001011724.3_cds_NP_001011724.1_1	-293	-287	gccaCCACGACcact	1.45
+gtggca|tgccac	D	gtggca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-635	-630	gttgGTGGCAttaa	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-539	-534	ggcaGTGGCAagaa	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-278	-273	tttgGTGGCAgctg	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-251	-246	tatgGTGGCAgtgg	1.37
+gtggca|tgccac	D	gtggca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-17	-12	ggcaGTGGCAgaag	1.37
+gtggca|tgccac	R	gtggca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-778	-773	cacaGTGGCAtatg	1.37
+accgcca|tggcggt	R	accgcca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-97	-91	ctccACCGCCAtagg	1.32
+ccatagcc|ggctatgg	R	ccatagcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-54	-47	aacgCCATAGCCacct	1.28
+ccatag|ctatgg	R	ccatag	lcl|NM_001011724.3_cds_NP_001011724.1_1	-100	-95	accgCCATAGgggc	1.26
+ccatag|ctatgg	R	ccatag	lcl|NM_001011724.3_cds_NP_001011724.1_1	-52	-47	aacgCCATAGccac	1.26
+ccatag|ctatgg	R	ccatag	lcl|NM_001011724.3_cds_NP_001011724.1_1	-25	-20	actgCCATAGctac	1.26
+atggcgg|ccgccat	D	atggcgg	lcl|NM_001011724.3_cds_NP_001011724.1_1	-98	-92	ccctATGGCGGtgga	0.96
+caaagc|gctttg	D	caaagc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-419	-414	ctgcCAAAGCaaga	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-899	-894	gtttCAAAGCtcaa	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-797	-792	aaccCAAAGCccct	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-524	-519	aaggCAAAGCccct	0.94
+caaagc|gctttg	R	caaagc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-284	-279	ccacCAAAGCcacc	0.94
+cgacca|tggtcg	D	cgacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-502	-497	ttgaCGACCAtgac	0.84
+cgacca|tggtcg	R	cgacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-352	-347	tccaCGACCAccac	0.84
+cgacca|tggtcg	R	cgacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-316	-311	tccaCGACCAaagt	0.84
+cgacca|tggtcg	R	cgacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-295	-290	accaCGACCActga	0.84
+cacgac|gtcgtg	R	cacgac	lcl|NM_001011724.3_cds_NP_001011724.1_1	-350	-345	tctcCACGACcacc	0.71
+cacgac|gtcgtg	R	cacgac	lcl|NM_001011724.3_cds_NP_001011724.1_1	-314	-309	cctcCACGACcaaa	0.71
+cacgac|gtcgtg	R	cacgac	lcl|NM_001011724.3_cds_NP_001011724.1_1	-293	-288	ccacCACGACcact	0.71
+ccgcca|tggcgg	R	ccgcca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-97	-92	tccaCCGCCAtagg	0.54
+caaagcc|ggctttg	R	caaagcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-798	-792	aaccCAAAGCCcctg	0.49
+caaagcc|ggctttg	R	caaagcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-525	-519	aaggCAAAGCCcctt	0.49
+caaagcc|ggctttg	R	caaagcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-285	-279	ccacCAAAGCCacca	0.49
+gtcgtgga|tccacgac	D	gtcgtgga	lcl|NM_001011724.3_cds_NP_001011724.1_1	-350	-343	ggtgGTCGTGGAgatg	0.40
+gtcgtgga|tccacgac	D	gtcgtgga	lcl|NM_001011724.3_cds_NP_001011724.1_1	-314	-307	tttgGTCGTGGAggaa	0.40
+ggtgga|tccacc	D	ggtgga	lcl|NM_001011724.3_cds_NP_001011724.1_1	-763	-758	aggaGGTGGAtgca	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_001011724.3_cds_NP_001011724.1_1	-730	-725	acaaGGTGGAtgga	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_001011724.3_cds_NP_001011724.1_1	-261	-256	tggtGGTGGAtatg	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_001011724.3_cds_NP_001011724.1_1	-195	-190	aggtGGTGGAagct	0.39
+ggtgga|tccacc	D	ggtgga	lcl|NM_001011724.3_cds_NP_001011724.1_1	-93	-88	tggcGGTGGAggcc	0.39
+cactgcc|ggcagtg	R	cactgcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-543	-537	ttgcCACTGCCtcgg	0.32
+cactgcc|ggcagtg	R	cactgcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-249	-243	tcccCACTGCCacca	0.32
+cactgcc|ggcagtg	R	cactgcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-21	-15	ctgcCACTGCCatag	0.32
+acgaccac|gtggtcgt	R	acgaccac	lcl|NM_001011724.3_cds_NP_001011724.1_1	-353	-346	ctccACGACCACcacc	0.30
+acgaccac|gtggtcgt	R	acgaccac	lcl|NM_001011724.3_cds_NP_001011724.1_1	-296	-289	caccACGACCACtgaa	0.30
+gtggtgga|tccaccac	D	gtggtgga	lcl|NM_001011724.3_cds_NP_001011724.1_1	-263	-256	ggtgGTGGTGGAtatg	0.28
+gtggtgga|tccaccac	D	gtggtgga	lcl|NM_001011724.3_cds_NP_001011724.1_1	-197	-190	ggagGTGGTGGAagct	0.28
+atagcc|ggctat	R	atagcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-237	-232	cattATAGCCatcc	0.25
+atagcc|ggctat	R	atagcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-54	-49	cgccATAGCCacct	0.25
+catagcc|ggctatg	R	catagcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-54	-48	acgcCATAGCCacct	0.22
+gccata|tatggc	R	gccata	lcl|NM_001011724.3_cds_NP_001011724.1_1	-99	-94	caccGCCATAgggg	0.12
+gccata|tatggc	R	gccata	lcl|NM_001011724.3_cds_NP_001011724.1_1	-51	-46	aaacGCCATAgcca	0.12
+gccata|tatggc	R	gccata	lcl|NM_001011724.3_cds_NP_001011724.1_1	-24	-19	cactGCCATAgcta	0.12
+ccaaagcc|ggctttgg	R	ccaaagcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-798	-791	aaacCCAAAGCCcctg	0.12
+ccaaagcc|ggctttgg	R	ccaaagcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-285	-278	gccaCCAAAGCCacca	0.12
+accgcc|ggcggt	R	accgcc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-96	-91	ctccACCGCCatag	0.08
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_001011724.3_cds_NP_001011724.1_1	-657	-650	cttaACTGTGAAaaag	0.07
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_001011724.3_cds_NP_001011724.1_1	-459	-452	ccatACTGTGAAgggc	0.07
+actgtgaa|ttcacagt	D	actgtgaa	lcl|NM_001011724.3_cds_NP_001011724.1_1	-443	-436	cacaACTGTGAAgtta	0.07
+cacgacca|tggtcgtg	R	cacgacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-352	-345	tctcCACGACCAccac	0.06
+cacgacca|tggtcgtg	R	cacgacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-316	-309	cctcCACGACCAaagt	0.06
+cacgacca|tggtcgtg	R	cacgacca	lcl|NM_001011724.3_cds_NP_001011724.1_1	-295	-288	ccacCACGACCActga	0.06
+accacc|ggtggt	R	accacc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-357	-352	gaccACCACCaaag	0.05
+accacc|ggtggt	R	accacc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-267	-262	caccACCACCacag	0.05
+accacc|ggtggt	R	accacc	lcl|NM_001011724.3_cds_NP_001011724.1_1	-198	-193	ttccACCACCtcca	0.05
+; Host name	biow
+; Job started	2021-02-01.030120
+; Job done	2021-02-01.030120
+; Seconds	0.25
+;	user	0.25
+;	system	0.01
+;	cuser	0
+;	csystem	0

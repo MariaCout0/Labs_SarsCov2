@@ -117,7 +117,7 @@ samtools tview es_aln_pe.sort.bam Sars_cov_2.ASM985889v3.101.dna.toplevel.fa -p 
 samtools tview pt_aln_pe.sort.bam Sars_cov_2.ASM985889v3.101.dna.toplevel.fa -p 21:9417961
 ```
 
-### Identificação dos variantes e extraição para um ficheiro vcf utilizando o bcftools:
+### Identificação dos variantes e extração para um ficheiro vcf utilizando o bcftools:
 ```
 bcftools mpileup -Ou -f Sars_cov_2.ASM985889v3.dna.toplevel.fa es_aln_pe.sort.bam | bcftools call -Ov -vc > es.raw.vcf
 bcftools mpileup -Ou -f Sars_cov_2.ASM985889v3.dna.toplevel.fa pt_aln_pe.sort.bam | bcftools call -Ov -vc > pt.raw.vcf
